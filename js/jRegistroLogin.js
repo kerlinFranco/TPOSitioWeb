@@ -13,6 +13,7 @@ function anchoPag(){
     if(window.innerWidth>850){
         cajaAtrasLogin.style.display="block";
         cajaAtrasRegistro.style.display="block";
+        cajaAtras.style.height= "auto";
     }else{
         cajaAtrasRegistro.style.display="block";
         cajaAtrasRegistro.style.opacity="1";
@@ -20,7 +21,7 @@ function anchoPag(){
         formularioLogin.style.display="block";
         formularioRegistro.style.display="none";
         contenedorLoginRegistro.style.left="0px";
-        cajaAtras.style.height= "/*900px*/";
+        cajaAtras.style.height= "750px";
         
     }
 }
@@ -34,6 +35,7 @@ function registro(){
         formularioLogin.style.display="none";
         cajaAtrasRegistro.style.opacity="0";
         cajaAtrasLogin.style.opacity="1";
+        formularioRegistro.style.top="-300px";
         
     }else{
         formularioRegistro.style.display="block";
