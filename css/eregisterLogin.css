@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    background-image: url(../imagenes/fondoLogin.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;/* para que la img ocupetoda la pantalla*/
+    
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedorTodo{
+    width:100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.cajaAtras{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color:rgba(29, 29, 28, 0.5);
+    border-radius: 15px;
+}
+
+.cajaAtras div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+.cajaAtras div p,
+.cajaAtras div button{
+margin: 30px;
+}
+.cajaAtras div h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+.cajaAtras button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: 300ms;
+}
+.cajaAtras button:hover{
+    background: white;
+    color: rgb(151, 46, 90);
+}
+.contenedorLoginRegistro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    top: -220px;
+    left: 10px;
+    transition:left 300ms;
+}
+
+
+.contenedorLoginRegistro form{
+    width: 100%;
+    padding: 80px 20px;
+    background: rgb(248, 248, 246);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedorLoginRegistro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(151, 46, 90);
+}
+
+.contenedorLoginRegistro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: aliceblue;
+    font-size: 16px;
+    outline: none;
+}
+.contenedorLoginRegistro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    background: rgb(151, 46, 90);
+    cursor: pointer;
+    outline: none;
+}
+.formularioLogin{
+    opacity: 1;
+    display: block;
+}
+.formularioRegistro{
+    display: none;
+
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        margin-top: 50px;
+    }
+    .cajaAtras{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .cajaAtras div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    .contenedorLoginRegistro{
+        top:-10px;
+        left: -5px;
+        margin: auto;
+
+    }
+    .contenedorLoginRegistro form{
+        position: relative;
+    }
+
+}
+
