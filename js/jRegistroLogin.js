@@ -2,7 +2,7 @@ document.getElementById("bRegistrar").addEventListener("click",registro);
 document.getElementById("bIniciarSession").addEventListener("click",login);
 window.addEventListener("resize",anchoPag);
 
-
+let cajaAtras=document.querySelector(".cajaAtras");
 let contenedorLoginRegistro=document.querySelector(".contenedorLoginRegistro");
 let formularioLogin=document.querySelector(".formularioLogin");
 let formularioRegistro=document.querySelector(".formularioRegistro");
@@ -20,6 +20,7 @@ function anchoPag(){
         formularioLogin.style.display="block";
         formularioRegistro.style.display="none";
         contenedorLoginRegistro.style.left="0px";
+        
     }
 }
 
@@ -39,6 +40,8 @@ function registro(){
         cajaAtrasRegistro.style.display="none";
         cajaAtrasLogin.style.display="block";
         cajaAtrasLogin.style.opacity="1";
+        cajaAtras.style.height= "900px";//hacer lo mismo para el login 
+        formularioRegistro.style.top="-600px";//tambien hay que aplicarlo anchoPag
     }
     
 }
