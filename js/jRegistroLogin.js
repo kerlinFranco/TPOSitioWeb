@@ -20,6 +20,7 @@ function anchoPag(){
         formularioLogin.style.display="block";
         formularioRegistro.style.display="none";
         contenedorLoginRegistro.style.left="0px";
+        cajaAtras.style.height= "/*900px*/";
         
     }
 }
@@ -33,6 +34,7 @@ function registro(){
         formularioLogin.style.display="none";
         cajaAtrasRegistro.style.opacity="0";
         cajaAtrasLogin.style.opacity="1";
+        
     }else{
         formularioRegistro.style.display="block";
         contenedorLoginRegistro.style.left="0px";
@@ -58,6 +60,8 @@ function login(){
         contenedorLoginRegistro.style.left="0px";
         formularioLogin.style.display="block";
         cajaAtrasRegistro.style.display="block";
-        cajaAtrasLogin.style.display="none";  
+        cajaAtrasLogin.style.display="none";
+        cajaAtras.style.height= "750px";
+        formularioRegistro.style.top="-500px";  
     }
 }
