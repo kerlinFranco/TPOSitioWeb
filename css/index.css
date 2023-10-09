@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #412027;
+	color: #000;
+	font-family: 'Lora', serif; /* Usar Lora de Google Fonts */
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+                        "widget-1 widget-1 widget-1"
+						 "contenido contenido sidebar"
+						 "widget-2 widget-3 widget-4"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #ffffff;
+	color: #5f5f5f;
+	grid-area: header;
+    text-align: center;
+	align-items: center;
+
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: #f1e1cd;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.contenedor .widget-1 {
+	background: #412027;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .widget-2,
+.contenedor .widget-3,
+.contenedor .widget-4 {
+	background: #fff;
+	color: #412027;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+
+.contenedor .widget-3 {
+	grid-area: widget-3;
+}
+
+.contenedor .widget-4 {
+	grid-area: widget-4;
+}
+
+.contenedor .footer {
+	background: #ffff;
+	color: #412027;
+    align-items: center;
+    text-align: center;
+	grid-area: footer;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+                        "widget-1 widget-1 widget-1"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-3 widget-3 widget-3"
+                         "widget-4 widget-4 widget-4"
+						 "footer footer footer";
+	}
+}
+
+/* fin de Tomado de grid-4-responsive.css */
+
+
+/* Tomado de Clase 6 CSS2 */
+
+h1{
+    text-align: center;
+}
+.navheader{
+    margin: 10px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+    border: 1px solid rgb(241, 241, 234);
+    padding: 10px;
+    border-radius: 5px;
+
+    /* display: block; */ /* pone los botones uno abajo del otro */
+    display: inline-block; /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
+}
+nav a{
+    padding: 10px;
+
+
+
+
+
+}
+/* Finde Tomado de clase 6 CSS2 */
+
