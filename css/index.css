@@ -20,8 +20,11 @@ body {
 
 	grid-template-areas: "header header header"
                         "widget-1 widget-1 widget-1"
+                        "widget-2 widget-2 widget-2"
 						 "contenido contenido sidebar"
-						 "widget-2 widget-3 widget-4"
+                         "widget-3 widget-3 widget-3"
+                         "contenido-2 contenido-2 sidebar-2"
+                         "widget-4 widget-4 widget-4"
 						 "footer footer footer";
 }
 
@@ -29,6 +32,8 @@ body {
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .sidebar,
+.contenedor .contenido-2,
+.contenedor .sidebar-2,
 .contenedor .footer {
 	background: #fff;
 	padding: 20px;
@@ -48,6 +53,13 @@ body {
 	grid-area: contenido;
 }
 
+.contenedor .contenido-2
+                    {
+	grid-area: contenido-2;
+}
+
+
+
 .contenedor .sidebar {
 	grid-column: 3 / 4;
 	background: #f1e1cd;
@@ -58,6 +70,18 @@ body {
 	min-height: 100px;
 	grid-area: sidebar;
 }
+
+.contenedor .sidebar-2 {
+	grid-column: 3 / 4;
+	background: #f1e1cd;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar-2;
+}
+
 
 .contenedor .widget-1 {
 	background: #412027;
@@ -111,8 +135,11 @@ body {
 		grid-template-areas: "header header header"
                         "widget-1 widget-1 widget-1"
 						 "contenido contenido contenido"
+                         "widget-2 widget-2 widget-2"
 						 "sidebar sidebar sidebar"
 						 "widget-3 widget-3 widget-3"
+                         "contenido-2 contenido-2 contenido-2"
+                         "sidebar-2 sidebar-2 sidebar-2"
                          "widget-4 widget-4 widget-4"
 						 "footer footer footer";
 	}
