@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y registro</title>
+    <link rel="stylesheet" href="css/eregisterLogin.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="contenedorTodo">
+
+
+            <div class="cajaAtras">
+                <div class="cajaLogin">
+                    <h3>¿Tienes cuenta?</h3>
+                    <p>Iniciar sesión</p>
+                    <button id="bIniciarSession">Iniciar sesión</button>
+                </div>
+                <div class="cajaRegistro">
+                    <h3>¿No tienes cuenta?</h3>
+                    <p>Registrate para iniciar sesión</p>
+                    <button id="bRegistrar">Registrarse</button>
+                </div>
+            </div>
+            <div class="contenedorLoginRegistro">
+                <form action="" class="formularioLogin">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="email" id="emailLogin" placeholder="Correo Electronico" required>
+                    <input type="password" id="passwordLogin" placeholder="Contraseña" required>
+                    <button>Entrar</button>
+                </form>
+                <form action="" class="formularioRegistro">
+                    <h2>Registrarse</h2>
+                    <input type="text" id="nombreRegistro" placeholder="Nombre completo" required>
+                    <input type="email" id="emailRegistro" placeholder="Correo Electronico" required>
+                    <input type="text" id="usuarioRegistro" placeholder="usuario" required>
+                    <input type="password" id="passwordRegistro" placeholder="Contraseña" required>
+                    <input type="password" id="passwordRegistro2" placeholder="Confirmar contraseña" required>
+                    <button>Registrarse</button>
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="js/jRegistroLogin.js"></script>
+    <script src="js/validarRegistroLogin.js"></script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
