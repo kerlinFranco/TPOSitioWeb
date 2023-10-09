@@ -2,6 +2,11 @@
 let email=document.getElementById("emailLogin");
 let passL=document.getElementById("passwordLogin");
 
-// form.addEventListener("submit",e=>){
-//     if(email.maches(""))
-// }
+if(/^[A-Za-z]\s?\d$/.test(email.value))
+  {
+    console.log("valor valido");
+  }
+  else{
+    console.log("valor invalido");
+  }
+
