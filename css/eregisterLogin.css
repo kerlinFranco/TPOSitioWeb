@@ -23,7 +23,9 @@ main{
     margin-top: 100px;
 }
 
-
+footer{
+    background-color: azure;
+}
 
 .contenedorTodo{
     width:100%;
