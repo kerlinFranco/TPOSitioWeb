@@ -42,9 +42,15 @@ body {
     height: 400px;
 }
 
+/* Resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
 .widget {
-    width: 300px;
-    height: 400px;
+/*    width: 300px; */
+/*    height: 400px;*/
     margin: 20px;
 }
 
@@ -58,32 +64,83 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
 
+
+}
+
+.contenedor#index {
+    grid-template-areas: "header header header"
+    "widget-1 widget-1 widget-1"
+    "contenido contenido sidebar"
+    "widget-2 widget-2 widget-2"
+    "widget-3 widget-3 widget-3"
+    "contenido-2 contenido-2 sidebar-2"
+    "widget-4 widget-4 widget-4"
+    "footer footer footer";
+}
+
+.contenedor#modelo {
     grid-template-areas: "header header header"
         "widget-1 widget-1 widget-1"
         "contenido contenido sidebar"
-        "widget-2 widget-2 widget-2"
-        "widget-3 widget-3 widget-3"
-        "contenido-2 contenido-2 sidebar-2"
-        "widget-4 widget-4 widget-4"
         "footer footer footer";
 }
 
-.contenedor-modelo {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 0px;
-    /* gap entre sectores */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+@media screen and (max-width: 768px) {
+    .contenedor#index {
+        grid-template-areas: "header header header"
+            "widget-1 widget-1 widget-1"
+            "contenido contenido contenido"
+            "widget-2 widget-2 widget-2"
+            "sidebar sidebar sidebar"
+            "widget-3 widget-3 widget-3"
+            "contenido-2 contenido-2 contenido-2"
+            "sidebar-2 sidebar-2 sidebar-2"
+            "widget-4 widget-4 widget-4"
+            "footer footer footer";
 
-    grid-template-areas: "header header header"
-        "widget-modelo widget-modelo widget-modelo"
-        "contenido-modelo contenido-modelo sidebar-modelo"
-        "contenido-modelo contenido-modelo sidebar-modelo"
-        "footer footer footer";
+            
+    }
+
+    .contenedor#modelo {
+        grid-template-areas: "header header header"
+            "widget-1 widget-1 widget-1"
+            "contenido contenido contenido"
+            "contenido contenido contenido"
+            "sidebar sidebar sidebar"
+            "footer footer footer";
+    }
 }
+
+
+@media screen and (max-width: 500px) {
+    .contenedor#index {
+        grid-template-areas: "header header"
+            "widget-1 widget-1 widget-1"
+            "contenido contenido contenido"
+            "widget-2 widget-2"
+            "sidebar sidebar sidebar"
+            "widget-3 widget-3 widget-3"
+            "contenido-2 contenido-2 contenido-2"
+            "sidebar-2 sidebar-2 sidebar-2"
+            "widget-4 widget-4 widget-4"
+            "footer footer footer";
+
+            
+    }
+
+    .contenedor#modelo {
+        grid-template-areas: "header header"
+            "widget-1 widget-1 widget-1"
+            "contenido contenido contenido"
+            "contenido contenido contenido"
+            "sidebar sidebar sidebar"
+            "footer footer footer";
+    }
+}
+
+
+
+
 
 .contenedor>div,
 .contenedor .header {
@@ -220,31 +277,6 @@ body {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    .contenedor {
-        grid-template-areas: "header header header"
-            "widget-1 widget-1 widget-1"
-            "contenido contenido contenido"
-            "widget-2 widget-2 widget-2"
-            "sidebar sidebar sidebar"
-            "widget-3 widget-3 widget-3"
-            "contenido-2 contenido-2 contenido-2"
-            "sidebar-2 sidebar-2 sidebar-2"
-            "widget-4 widget-4 widget-4"
-            "footer footer footer";
-
-            
-    }
-
-    .contenedor-modelo {
-        grid-template-areas: "header header header"
-            "widget-modelo widget-modelo widget-modelo"
-            "contenido-modelo contenido-modelo contenido-modelo"
-            "contenido-modelo contenido-modelo contenido-modelo"
-            "sidebar-modelo sidebar-modelo sidebar-modelo"
-            "footer footer footer";
-    }
-}
 
 /* fin de Tomado de grid-4-responsive.css */
 
