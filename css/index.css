@@ -52,7 +52,7 @@ body {
 }
 
 .widget {
-    width: 200px;
+    width: 250px;
     height: 350px;
     margin: 20px;
     align-self: auto;
@@ -78,7 +78,7 @@ body {
         "widget-1 widget-1 widget-1 widget-1"
         "contenido contenido contenido sidebar"
         "widget-2 widget-2 widget-2 widget-2"
-        "widget-3 widget-3 widget-3 widget-3"
+        "widget-2 widget-2 widget-2 widget-2"
         "contenido-2 contenido-2 contenido-2 sidebar-2"
         "widget-4 widget-4 widget-4 widget-4"
         "footer footer footer footer";
@@ -92,7 +92,7 @@ body {
         "sidebar contenido contenido sidebar-2"
         "sidebar contenido contenido sidebar-2"
         "sidebar contenido contenido sidebar-2"
-        "widget-2 widget-2 widget-2 widget-2"
+        "widget-4 widget-4 widget-4 widget-4"
         "footer footer footer footer";
 }
 
@@ -114,6 +114,8 @@ body {
         "widget-1 widget-1 widget-1 widget-1"
         "sidebar contenido contenido sidebar-2"
         "sidebar contenido contenido sidebar-2"
+        "sidebar contenido contenido sidebar-2"
+        "widget-2 widget-2 widget-2 widget-2"
         "widget-2 widget-2 widget-2 widget-2"
         "footer footer footer footer";
 }
@@ -124,6 +126,9 @@ body {
         "widget-1 widget-1 widget-1 widget-1"
         "sidebar contenido contenido sidebar-2"
         "sidebar contenido contenido sidebar-2"
+        "sidebar contenido contenido sidebar-2"
+        "widget-2 widget-2 widget-2 widget-2"
+        "widget-2 widget-2 widget-2 widget-2"
         "footer footer footer footer";
 }
 
@@ -149,9 +154,9 @@ body {
             "widget-1 widget-1 widget-1 widget-1"
             "contenido contenido sidebar sidebar"
             "contenido contenido sidebar sidebar"
-            "contenido contenido sidebar-2 sidebar-2"
-            "contenido contenido sidebar-2 sidebar-2"
-            "widget-2 widget-2 widget-2 widget-2"
+            "contenido-2 contenido-2 sidebar-2 sidebar-2"
+            "contenido-2 contenido-2 widget-2 widget-2"
+            "widget-4 widget-4 widget-4 widget-4"
             "footer footer footer footer";
     }
 
