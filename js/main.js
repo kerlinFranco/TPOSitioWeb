@@ -5,7 +5,7 @@ let cad = `
             <b class="logotipo">Saraza Wine Club</b>
             <a class="navheader" href="index.html">Inicio</a>
             <a class="navheader" href="tienda.html">Tienda</a>
-            <a class="navheader" href="cart.html">Carrito</a>
+            <a class="navheader" href="carrito.html">Carrito</a>
             <a class="navheader" href="registerLogin.html">Login</a>
             <a class="navheader" href="quienesSomos.html">Quienes Somos</a>
         </menunav> `
