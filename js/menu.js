@@ -4,10 +4,10 @@ let cad = `
         <menunav>
             <b class="logotipo">Saraza Wine Club</b>
             <a class="navheader" href="index.html">Inicio</a>
-            <a class="navheader" href="tienda.html">Tienda</a>
-            <a class="navheader" href="cart.html">Carrito</a>
-            <a class="navheader" href="registerLogin.html">Login</a>
-            <a class="navheader" href="quienesSomos.html">Quienes Somos</a>
+            <a class="navheader" href="tienda-fabian.html">Tienda</a>
+            <a class="navheader" href="carrito-fabian.html">Carrito</a>
+            <a class="navheader" href="registerLogin-fabian.html">Login</a>
+            <a class="navheader" href="quienesSomos-fabian.html">Quienes Somos</a>
         </menunav> `
 
 document.querySelector("header").innerHTML = cad
