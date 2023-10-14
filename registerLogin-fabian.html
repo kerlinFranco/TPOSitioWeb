@@ -23,12 +23,48 @@
             <h2>Inicio</h2>
         </header>
         <div class="widget-1">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO BENEFICIOS DE REGISTRARSE - CLASS=WIDGET-1  SI CAMBIAS A WIDGET-2 CAMBIAS EL ESQUEMA DE COLORES / Y LA IMAGEN SAQUENLA O PONGAN OTRA COSA</p>
+            <p>En Saraza wine club, te invitamos a un mundo de experiencias enológicas exclusivas que solo podrás disfrutar al unirte a nuestra comunidad. 
+                <br>¿Por qué registrarte?<br>
+                Ser miembro te garantiza acceso prioritario a nuestras ofertas especiales, descuentos y promociones limitadas. Prepárate para deleitar tus 
+                sentidos con vinos de calidad a precios irresistibles.</p>
             <img src="./imagenes/wineHero.jpg" alt="Bienvenidos a Saraza Wine Club" class="heroimage">
         </div>
         <main class="contenido">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO LOS MENUES DE LOGIN Y REGISTRO - CLASS=CONTENIDO</p>
-            <h1>ENTRAR</h1>
+            <div class="contenedorLoginRegistro">
+                <div class="cajaAtras">
+                    <div class="cajaLogin">
+                        <h3>¿Tienes cuenta?</h3>
+                        <!-- <p>Iniciar sesión</p> -->
+                        <button id="bIniciarSession">Iniciar sesión</button>
+                    </div>
+                    <div class="cajaRegistro">
+                        <h3>¿No tienes cuenta?</h3>
+                        <p>Registrate para iniciar sesión</p>
+                        <button id="bRegistrar">Registrarse</button>
+                    </div>
+                </div>
+                <div class="contenedorFormLoginRegistro">
+                    <form action="" class="formularioLogin">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="email" id="emailLogin" placeholder="Correo Electronico" required>
+                        <input type="password" id="passwordLogin" placeholder="Contraseña" required>
+                        <button>Entrar</button>
+                    </form>
+                    <form action="" class="formularioRegistro">
+                        <h2>Registrarse</h2>
+                        <input type="text" id="nombreRegistro" placeholder="Nombre completo" required>
+                        <input type="email" id="emailRegistro" placeholder="Correo Electronico" required>
+                        <input type="text" id="usuarioRegistro" placeholder="usuario" required>
+                        <input type="password" id="passwordRegistro" placeholder="Contraseña" required>
+                        <input type="password" id="passwordRegistro2" placeholder="Confirmar contraseña" required>
+                        <button>Registrarse</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+
             <br><br>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis rutrum gravida. Aliquam
@@ -48,7 +84,8 @@
         <aside class="sidebar">
             <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO DESCUENTOS DE ESTE MES PARA REGISTRADOS - CLASS=SIDEBAR</p>
             <h1>DESCUENTOS PARA CLIENTES REGISTRADOS!</h1>
-            <img src="./imagenes/f581acf4e3f6cfc34a0dd1b3a334a9db.jpg" alt="Bienvenido a Sara Winery Club" class="widget">
+            <img src="./imagenes/f581acf4e3f6cfc34a0dd1b3a334a9db.jpg" alt="Bienvenido a Sara Winery Club"
+                class="widget">
         </aside>
         <aside class="sidebar-2">
             <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO TARJETAS DE PRODUCTOS CON OFERTAS - CLASS=SIDEBAR-2</p>
@@ -64,6 +101,7 @@
         </footer>
         <script src="./js/menu.js"></script>
         <script src="./js/index.js"></script>
+        <script src="js/jRegistroLogin.js"></script>
     </div>
 
 </body>
