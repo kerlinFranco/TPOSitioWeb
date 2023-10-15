@@ -1,3 +1,5 @@
+
+// css del registro y login
 document.getElementById("bRegistrar").addEventListener("click",registro);
 document.getElementById("bIniciarSession").addEventListener("click",login);
 window.addEventListener("resize",anchoPag);
@@ -35,7 +37,7 @@ anchoPag();
 function registro(){
     formularioRegistro.style.display="block";
     formularioLogin.style.display="none";
-    cajaAtras.style.height="900px";
+    cajaAtras.style.height="800px";
     cajaAtrasRegistro.style.display="none";
     cajaAtrasRegistro.style.opacity="0";
     cajaAtrasLogin.style.display="block";
@@ -89,3 +91,4 @@ function login(){
     //     formularioRegistro.style.top="-500px";  
     // }
 }
+//fin del css
