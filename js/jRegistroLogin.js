@@ -37,7 +37,7 @@ anchoPag();
 function registro(){
     formularioRegistro.style.display="block";
     formularioLogin.style.display="none";
-    cajaAtras.style.height="800px";
+    cajaAtras.style.height="820px";
     cajaAtrasRegistro.style.display="none";
     cajaAtrasRegistro.style.opacity="0";
     cajaAtrasLogin.style.display="block";

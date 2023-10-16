@@ -21,13 +21,17 @@ formLogin.addEventListener("submit",e=>{
     let entrar=false;
     mensajeL.innerHTML=""
     if(emailLogin.value.length==0){
-        msj+=`Ingrese un email`
+        msj+=`Ingrese un email<br>`
+        entrar=true;
+        
     }else if(!expRegEmail.test(emailLogin.value)){
         msj+=`El email no es valido <br>`
         entrar=true;
+        
     }
     if(passLogin.value.length==0){
-      msj+=`Ingrese una contraseña`
+      msj+=`Ingrese una contraseña<br>`
+      entrar=true;
     }
     if(entrar){
         mensajeL.innerHTML=msj
@@ -41,20 +45,20 @@ formRegistro.addEventListener("submit", e=>{
     let entrar=false;
     mensajeR.innerHTML=""
     if(!expRegtext.test(nombre.value)){
-      msj+=`El nombre no es valido`
+      msj+=`El nombre no es valido<br>`
     }
     if(emailRegistro.value.length==0){
-        msj+=`Ingrese un email`
+        msj+=`Ingrese un email<br>`
     }else if(!expRegEmail.test(emailRegistro.value)){
         msj+=`El email no es valido <br>`
         entrar=true;
     }
     if(passRegistro.value.length==0){
-      msj+=`Ingrese una contraseña`
+      msj+=`Ingrese una contraseña<br>`
       entrar=true;
     }
     if(passRegistro2.value!= passRegistro.value){
-      msj+=`Las contraseñas son diferentes`
+      msj+=`Las contraseñas son diferentes<br>`
       entrar=true;
     }
     if(entrar){
