@@ -134,6 +134,18 @@ body {
 
 /* Inicio Login Registro */
 
+#parrafoHero{
+    background-color: white;
+    padding: 30px;
+
+}
+.parrafo{
+    
+    color: rgb(151, 46, 90);
+    
+    
+}
+
 .contenedorLoginRegistro{
     width:100%;
     max-width:800px;
@@ -254,6 +266,10 @@ margin: 30px;
     bottom: -150px;
     display: none;
 
+}
+.mensaje{
+    margin: 10px;
+    color: rgb(151, 46, 90);
 }
 /* Fin del login Registro */
 

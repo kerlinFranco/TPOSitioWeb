@@ -58,7 +58,7 @@ formRegistro.addEventListener("submit", e=>{
       entrar=true;
     }
     if(entrar){
-        alert(msj)
+        // alert(msj)
         mensajeR.innerHTML=msj
     }
 })
