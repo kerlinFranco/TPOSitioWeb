@@ -132,6 +132,148 @@ body {
         "footer footer footer footer";
 }
 
+/* Inicio Login Registro */
+
+#parrafoHero{
+    background-color: white;
+    padding: 30px;
+
+}
+.parrafo{
+    
+    color: rgb(151, 46, 90);
+    
+    
+}
+
+.contenedorLoginRegistro{
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    position: relative;
+
+}
+
+.cajaAtras{
+    max-width: 600px;
+    height: 720px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* backdrop-filter: blur(10px); */
+    background-color:rgba(29, 29, 28, 0.5);
+    border-radius: 15px;
+}
+
+.cajaAtras div{
+    top: 40px;
+    left: 110px;
+    margin: 0px;
+    padding: 30px;
+    position: absolute;
+    /* margin: 100px 40px; */
+    color: white;
+    /* transition: all 500ms;  */
+}
+.cajaAtras div p,
+.cajaAtras div button{
+margin: 30px;
+}
+.cajaAtras div h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.cajaAtras button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: 300ms;
+}
+
+.cajaLogin{
+    opacity: 0;
+    display: "none";
+}
+.cajaAtrasRegistro{
+    opacity: 1;
+    display: block;
+}
+
+.cajaAtras button:hover{
+    background: white;
+    color: rgb(151, 46, 90);
+}
+
+.contenedorFormLoginRegistro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    top: -220px;
+    left: 50px;
+    transition:left 300ms;
+}
+
+.contenedorFormLoginRegistro form{
+    width: 100%;
+    padding: 60px 40px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedorFormLoginRegistro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(151, 46, 90);
+}
+
+.contenedorFormLoginRegistro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: rgb(231, 227, 230);
+    font-size: 16px;
+    outline: none;
+}
+.contenedorFormLoginRegistro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    background: rgb(151, 46, 90);
+    cursor: pointer;
+    outline: none;
+}
+.formularioLogin{
+    margin: 10px;
+    opacity: 1;
+    display: block;
+   
+}
+.formularioRegistro{
+    bottom: -150px;
+    display: none;
+
+}
+.mensaje{
+    margin: 10px;
+    color: rgb(151, 46, 90);
+}
+/* Fin del login Registro */
+
+
 @media screen and (max-width: 768px) {
     .contenedor#index {
         grid-template-areas:
