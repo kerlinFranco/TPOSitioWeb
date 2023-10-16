@@ -57,6 +57,7 @@ body {
     margin: 20px;
     align-self: auto;
     object-fit: scale-down;
+    display:grid;
 }
 
 .contenedor {
@@ -318,10 +319,10 @@ margin: 30px;
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido sidebar sidebar"
-            "contenido contenido sidebar sidebar"
-            "contenido contenido sidebar-2 sidebar-2"
-            "contenido contenido sidebar-2 sidebar-2"
+            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar-2"
+            "contenido contenido contenido sidebar-2"
             "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
     }
@@ -420,6 +421,7 @@ margin: 30px;
     /*  padding de los sectores */
     border-radius: 0px;
     /* elimine el borde redondeado */
+    display: inline-block;
 }
 
 .contenedor .header {
