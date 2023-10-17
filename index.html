@@ -31,7 +31,7 @@
                 <!-- Tarjeta para el segundo registro (ID=ofertaClub) -->
                 <div class="tarjeta ofertaClub" v-if="registro2">
                     <img :src="registro2['fotoTarjetaOfertaClub']" :alt="registro2.nombre">
-                    <h3>{{ registro2.nombre }}</h3>
+                    <h2>{{ registro2.nombre }}</h2>
                     <p>Precio de descuento para socios: ${{ registro2['precioClub'] }}</p>
                     <a :href="registro2.link" class="enlace-tienda">Ver más</a>
                 </div>
@@ -73,7 +73,7 @@
                 <!-- Tarjeta para el primer registro (ID=destacado) -->
                 <div class="tarjeta destacado" v-if="registro1">
                     <img :src="registro1['fotoDestacado']" :alt="registro1.nombre">
-                    <h3>{{ registro1.nombre }}</h3>
+                    <h2>{{ registro1.nombre }}</h2>
                     <p>{{ registro1.descripcion }}</p>
                     <a :href="registro1.link" class="enlace-tienda">Ver más</a>
                 </div>
@@ -133,12 +133,12 @@
             </div>
         </div>
     </div>
-        <footer class="footer">
-            <h3>Footer</h3>
-        </footer>
-        <script src="./js/menu.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-        <script src="./js/cargaJsonVue.js"></script>
+    <footer class="footer">
+        <h3>Footer</h3>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./js/cargaJsonVue.js"></script>
 
     </div>
 
