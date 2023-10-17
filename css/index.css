@@ -147,6 +147,7 @@ body {
 }
 
 .contenedorLoginRegistro{
+    grid-area: contenido;
     width:100%;
     max-width:800px;
     margin:auto;
@@ -168,7 +169,7 @@ body {
 
 .cajaAtras div{
     top: 40px;
-    left: 110px;
+    left: 25%;
     margin: 0px;
     padding: 30px;
     position: absolute;
@@ -218,8 +219,8 @@ margin: 30px;
     max-width: 350px;
     position: relative;
     top: -220px;
-    left: 50px;
-    transition:left 300ms;
+    left: 10%;
+    
 }
 
 .contenedorFormLoginRegistro form{
@@ -257,6 +258,7 @@ margin: 30px;
     outline: none;
 }
 .formularioLogin{
+    
     margin: 10px;
     opacity: 1;
     display: block;
@@ -318,12 +320,25 @@ margin: 30px;
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido sidebar sidebar"
-            "contenido contenido sidebar sidebar"
-            "contenido contenido sidebar-2 sidebar-2"
-            "contenido contenido sidebar-2 sidebar-2"
+            "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
+            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar-2"
+            "contenido contenido contenido sidebar-2"
             "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
+    }
+    /*registro*/
+    .cajaAtras div{
+        left: 40px;
+    }
+    .contenedorFormLoginRegistro{
+        left: 6%;
+    }
+    .formularioLogin{
+        max-width: 70%;
+    }
+    .formularioRegistro{
+        max-width: 78%;
     }
 
     .contenedor#quienes-somos {
