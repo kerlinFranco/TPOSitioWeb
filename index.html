@@ -31,7 +31,7 @@
                 <!-- Tarjeta para el segundo registro (ID=ofertaClub) -->
                 <div class="tarjeta ofertaClub" v-if="registro2">
                     <img :src="registro2['fotoTarjetaOfertaClub']" :alt="registro2.nombre">
-                    <h2>{{ registro2.nombre }}</h2>
+                    <h3>{{ registro2.nombre }}</h3>
                     <p>Precio de descuento para socios: ${{ registro2['precioClub'] }}</p>
                     <a :href="registro2.link" class="enlace-tienda">Ver más</a>
                 </div>
@@ -73,12 +73,10 @@
                 <!-- Tarjeta para el primer registro (ID=destacado) -->
                 <div class="tarjeta destacado" v-if="registro1">
                     <img :src="registro1['fotoDestacado']" :alt="registro1.nombre">
-                    <h2>{{ registro1.nombre }}</h2>
+                    <h3>{{ registro1.nombre }}</h3>
                     <p>{{ registro1.descripcion }}</p>
                     <a :href="registro1.link" class="enlace-tienda">Ver más</a>
                 </div>
-
-
             </aside>
             <div class="contenido-2">
                 <h1>Suscribase</h1>
@@ -134,6 +132,7 @@
                 <h3>Premios y Reconocimientos</h3>
             </div>
         </div>
+    </div>
         <footer class="footer">
             <h3>Footer</h3>
         </footer>
