@@ -32,7 +32,7 @@
                 <!-- Tarjeta para el segundo registro (ID=ofertaClub) -->
                 <div class="tarjeta ofertaClub" v-if="registro2">
                     <img :src="registro2['fotoTarjetaOfertaClub']" :alt="registro2.nombre">
-                    <h2>{{ registro2.nombre }}</h2>
+                    <h3>{{ registro2.nombre }}</h3>
                     <p>Precio de descuento para socios: ${{ registro2['precioClub'] }}</p>
                     <a :href="registro2.link" class="enlace-tienda">Ver más</a>
                 </div>
@@ -71,70 +71,75 @@
             </main>
             <aside class="sidebar">
                 <h1>Destacado</h1>
-                 <!-- Tarjeta para el primer registro (ID=destacado) -->
+                <!-- Tarjeta para el primer registro (ID=destacado) -->
                 <div class="tarjeta destacado" v-if="registro1">
                     <img :src="registro1['fotoDestacado']" :alt="registro1.nombre">
-                    <h2>{{ registro1.nombre }}</h2>
+                    <h3>{{ registro1.nombre }}</h3>
                     <p>{{ registro1.descripcion }}</p>
                     <a :href="registro1.link" class="enlace-tienda">Ver más</a>
                 </div>
-        </div>
-
-        </aside>
-        <div class="contenido-2">
-            <h1>Suscribase</h1>
-            <br><br>
-            <p>
-                ¿Quieres llevar tu pasión por el vino al siguiente nivel? Únete al Saraza Wine Club y descubre un mundo
-                de exclusividad y deleite enológico.</p>
-            <br>
-            <p>Nuestra membresía te brinda acceso prioritario a una variedad
-                impresionante de vinos de calidad excepcional de todo el mundo.</p>
-            <br>
-            <p>¿Te gustaría disfrutar de etiquetas raras y exquisitas que normalmente son difíciles de encontrar? Como
-                miembro, puedes solicitar vinos
-                importados según tus preferencias. Pero eso no es todo, los beneficios no tienen fin.</p>
-            <br><br>
-            <p>Obtendrás descuentos sustanciales en tus compras de vino, lo que significa que cada botella que añadas a
-                tu colección es una inversión sabrosa.</p>
-            <br>
-            <p>Además, te invitamos a eventos exclusivos del club, donde tendrás la oportunidad de sumergirte en la
-                cultura vinícola, conocer a los productores y disfrutar de catas de
-                primera clase.</p>
-            <br>
-            <p>Únete al Saraza Wine Club y transforma tu pasión por el vino en una experiencia extraordinaria.
+            </aside>
+            <div class="contenido-2">
+                <h1>Suscribase</h1>
                 <br><br>
-                Ser socio de Saraza Wine Club es más que una membresía; es un pasaporte a un mundo de maravillas
-                enológicas.
-            </p>
-            <br><br>
-            <p>Imagina disfrutar de vinos únicos de las mejores bodegas del planeta, sin la molestia de
-                buscarlos tú mismo. Aprovecha los descuentos exclusivos que te brindamos en cada compra y experimenta la
-                satisfacción de encontrar tu vino favorito a precios irresistibles.</p>
-            <br>
-            <p>Pero eso no es todo, te invitamos a eventos exclusivos y elegantes donde compartirás tu amor por el vino
-                con otros entusiastas. Aprende de
-                expertos, descubre nuevas variedades y crea recuerdos inolvidables en cada sorbo.</p>
-            <br>
-            <p>La suscripción al Saraza Wine Club es un viaje enológico que no querrás perderte. ¿Estás listo para
-                unirte a nosotros?
-                Suscríbete hoy y comienza a saborear la vida con cada copa. ¡Salud!
-            </p>
-        </div>
-        <aside class="sidebar-2">
-            <h1>Ingresar</h1>
-            <img src="./imagenes/b825a588d1b9b5f9151155749872da15.jpg" alt="Entrar a Saraza Wine Club" class="widget">
-        </aside>
-        <div class="widget-4">
-            <h3>Premios y Reconocimientos</h3>
+                <p>
+                    ¿Quieres llevar tu pasión por el vino al siguiente nivel? Únete al Saraza Wine Club y descubre un
+                    mundo
+                    de exclusividad y deleite enológico.</p>
+                <br>
+                <p>Nuestra membresía te brinda acceso prioritario a una variedad
+                    impresionante de vinos de calidad excepcional de todo el mundo.</p>
+                <br>
+                <p>¿Te gustaría disfrutar de etiquetas raras y exquisitas que normalmente son difíciles de encontrar?
+                    Como
+                    miembro, puedes solicitar vinos
+                    importados según tus preferencias. Pero eso no es todo, los beneficios no tienen fin.</p>
+                <br><br>
+                <p>Obtendrás descuentos sustanciales en tus compras de vino, lo que significa que cada botella que
+                    añadas a
+                    tu colección es una inversión sabrosa.</p>
+                <br>
+                <p>Además, te invitamos a eventos exclusivos del club, donde tendrás la oportunidad de sumergirte en la
+                    cultura vinícola, conocer a los productores y disfrutar de catas de
+                    primera clase.</p>
+                <br>
+                <p>Únete al Saraza Wine Club y transforma tu pasión por el vino en una experiencia extraordinaria.
+                    <br><br>
+                    Ser socio de Saraza Wine Club es más que una membresía; es un pasaporte a un mundo de maravillas
+                    enológicas.
+                </p>
+                <br><br>
+                <p>Imagina disfrutar de vinos únicos de las mejores bodegas del planeta, sin la molestia de
+                    buscarlos tú mismo. Aprovecha los descuentos exclusivos que te brindamos en cada compra y
+                    experimenta la
+                    satisfacción de encontrar tu vino favorito a precios irresistibles.</p>
+                <br>
+                <p>Pero eso no es todo, te invitamos a eventos exclusivos y elegantes donde compartirás tu amor por el
+                    vino
+                    con otros entusiastas. Aprende de
+                    expertos, descubre nuevas variedades y crea recuerdos inolvidables en cada sorbo.</p>
+                <br>
+                <p>La suscripción al Saraza Wine Club es un viaje enológico que no querrás perderte. ¿Estás listo para
+                    unirte a nosotros?
+                    Suscríbete hoy y comienza a saborear la vida con cada copa. ¡Salud!
+                </p>
+            </div>
+            <aside class="sidebar-2">
+                <h1>Ingresar</h1>
+                <img src="./imagenes/b825a588d1b9b5f9151155749872da15.jpg" alt="Entrar a Saraza Wine Club"
+                    class="widget">
+            </aside>
+            <div class="widget-4">
+                <h3>Premios y Reconocimientos</h3>
+            </div>
         </div>
     </div>
-    <footer class="footer">
-        <h3>Footer</h3>
-    </footer>
-    <script src="./js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <script src="./js/cargaJsonVue.js"></script>
+        <footer class="footer">
+            <h3>Footer</h3>
+        </footer>
+        <script src="./js/menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="./js/cargaJsonVue.js"></script>
 
     </div>
 
