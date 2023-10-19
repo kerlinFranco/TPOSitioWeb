@@ -27,28 +27,6 @@
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
 }
 
-/* Estilos base para las tarjetas de los modulos ofertaClub y destacado */
-.tarjeta {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: calc(50% - 20px); /* Tarjetas ocupan el 50% del ancho de su contenedor */
-    box-sizing: border-box;
-    max-width: 400px; /* Ancho máximo de 400px para evitar que se estiren demasiado */
-}
-
-/* Estilos específicos para la tarjeta con ID=destacado */
-#destacado {
-    background-color: #f9f9f9;
-}
-
-/* Estilos específicos para la tarjeta con ID=ofertaClub */
-#ofertaClub {
-    background-color: #e2f2e6;
-}
-
 
 
 body {
@@ -79,7 +57,6 @@ body {
     margin: 20px;
     align-self: auto;
     object-fit: scale-down;
-    display:grid;
 }
 
 .contenedor {
@@ -297,8 +274,21 @@ margin: 30px;
     color: rgb(151, 46, 90);
 }
 /* Fin del login Registro */
-
-
+@media screen and (max-width: 1100px) {
+    .contenedor#login-registro {
+        grid-template-columns: 20% 20% 30% 30%;
+        grid-template-areas:
+            "header header header header"
+            "widget-1 widget-1 widget-1 widget-1"
+            "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
+            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar-2"
+            "contenido contenido contenido sidebar-2"
+            "widget-2 widget-2 widget-2 widget-2"
+            "footer footer footer footer";
+    }
+    
+}
 @media screen and (max-width: 768px) {
     .contenedor#index {
         grid-template-areas:
@@ -344,11 +334,6 @@ margin: 30px;
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido sidebar"
-            "contenido contenido contenido sidebar"
-            "contenido contenido contenido sidebar-2"
-            "contenido contenido contenido sidebar-2"
-            "widget-2 widget-2 widget-2 widget-2"
             "contenido contenido contenido contenido" /*contenido contenido sidebar sidebar */
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
@@ -373,14 +358,9 @@ margin: 30px;
             "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
     }
-    .tarjeta {
-        width: 100%; /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 768px */
-        max-width: 500px; /* Ancho máximo de 500px */
-        margin: 5px; /* Reduce el margen para un espaciado más compacto */
-    }
 }
 
-/* Estilos responsivos para pantallas menores o iguales a 500px */
+
 @media screen and (max-width: 500px) {
     .contenedor#index {
         grid-template-areas:
@@ -437,11 +417,6 @@ margin: 30px;
             "sidebar sidebar sidebar sidebar"
             "footer footer footer footer";
     }
-    .tarjeta {
-        width: 100%; /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 500px */
-        max-width: none; /* Elimina el ancho máximo */
-        margin: 5px; /* Reduce el margen para un espaciado más compacto */
-    }
 }
 
 
@@ -467,7 +442,6 @@ margin: 30px;
     /*  padding de los sectores */
     border-radius: 0px;
     /* elimine el borde redondeado */
-    display: inline-block;
 }
 
 .contenedor .header {
