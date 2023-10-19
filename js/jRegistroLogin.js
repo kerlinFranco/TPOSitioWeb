@@ -33,24 +33,6 @@ function registro(){
     cajaAtrasLogin.style.opacity="1";
     
 
-    // if(window.innerWidth>850){
-    //     formularioRegistro.style.display="block";
-    //     contenedorLoginRegistro.style.left="460px";
-    //     formularioLogin.style.display="none";
-    //     cajaAtrasRegistro.style.opacity="0";
-    //     cajaAtrasLogin.style.opacity="1";
-    //     formularioRegistro.style.top="-300px";
-        
-    // }else{
-    //     formularioRegistro.style.display="block";
-    //     contenedorLoginRegistro.style.left="0px";
-    //     formularioLogin.style.display="none";
-    //     cajaAtrasRegistro.style.display="none";
-    //     cajaAtrasLogin.style.display="block";
-    //     cajaAtrasLogin.style.opacity="1";
-    //     cajaAtras.style.height= "900px";//hacer lo mismo para el login 
-    //     formularioRegistro.style.top="-600px";//tambien hay que aplicarlo anchoPag
-    // }
     
 }
 
@@ -64,20 +46,29 @@ function login(){
     cajaAtrasLogin.style.opacity="0";
 
 
-    // if(window.innerWidth>850){
-    //     formularioRegistro.style.display="none";
-    //     contenedorLoginRegistro.style.left="10px";
-    //     formularioLogin.style.display="block";
-    //     cajaAtrasRegistro.style.opacity="1";
-    //     cajaAtrasLogin.style.opacity="0";
-    // }else{
-    //     formularioRegistro.style.display="none";
-    //     contenedorLoginRegistro.style.left="0px";
-    //     formularioLogin.style.display="block";
-    //     cajaAtrasRegistro.style.display="block";
-    //     cajaAtrasLogin.style.display="none";
-    //     cajaAtras.style.height= "750px";
-    //     formularioRegistro.style.top="-500px";  
-    // }
 }
 //fin del css
+//consumo de json para oferta en registro
+
+fetch('vinosLocal.json') 
+        .then(response => response.json())
+        .then(data => {
+            const ofertasSidebar = document.getElementById('ofertas-sidebar');
+            data.forEach(oferta => {
+                if(oferta.id==1){
+                    const ofertaCard = document.createElement('div');
+                ofertaCard.classList.add('oferta-card');
+                ofertaCard.innerHTML = `
+                    <h3>${oferta.nombre}</h3>
+                    <p>${oferta.descripcion}</p>
+                    <a href="${oferta.enlace}" target="blank">Ver oferta</a>
+                    
+                `;
+                ofertasSidebar.appendChild(ofertaCard);
+                }
+                
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar las ofertas: ', error);
+        });
