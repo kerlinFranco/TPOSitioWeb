@@ -54,8 +54,10 @@ fetch('vinosLocal.json')
         .then(response => response.json())
         .then(data => {
             const ofertasSidebar = document.getElementById('ofertas-sidebar');
+            let num=parseInt((Math.random()*100)+1)
+            console.log(num)
             data.forEach(oferta => {
-                if(oferta.id==1){
+                if(oferta.id==num){
                     const ofertaCard = document.createElement('div');
                 ofertaCard.classList.add('oferta-card');
                 ofertaCard.innerHTML = `
