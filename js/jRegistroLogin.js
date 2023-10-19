@@ -2,7 +2,7 @@
 // css del registro y login
 document.getElementById("bRegistrar").addEventListener("click",registro);
 document.getElementById("bIniciarSession").addEventListener("click",login);
-window.addEventListener("resize",anchoPag);
+// window.addEventListener("resize",anchoPag);
 
 let cajaAtras=document.querySelector(".cajaAtras");
 let cajaAtrasDiv=document.querySelector(".cajaAtras div");
@@ -12,27 +12,16 @@ let formularioRegistro=document.querySelector(".formularioRegistro");
 let cajaAtrasLogin=document.querySelector(".cajaLogin");
 let cajaAtrasRegistro=document.querySelector(".cajaRegistro");
 
-function anchoPag(){
+// function anchoPag(){
+ 
+//     if(window.innerWidth>768){
 
-    
-    }
-    // if(window.innerWidth>850){
-    //     cajaAtrasLogin.style.display="block";
-    //     cajaAtrasRegistro.style.display="block";
-    //     cajaAtras.style.height= "auto";
-    // }else{
-    //     cajaAtrasRegistro.style.display="block";
-    //     cajaAtrasRegistro.style.opacity="1";
-    //     cajaAtrasLogin.style.display="none";
-    //     formularioLogin.style.display="block";
-    //     formularioRegistro.style.display="none";
-    //     contenedorLoginRegistro.style.left="0px";
-    //     cajaAtras.style.height= "750px";
-        
-    // }
+//     }else{
 
+//     }
 
-anchoPag();
+// }
+// anchoPag();
 
 function registro(){
     formularioRegistro.style.display="block";

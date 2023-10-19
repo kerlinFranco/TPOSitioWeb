@@ -170,6 +170,7 @@ body {
 }
 
 .contenedorLoginRegistro{
+    
     width:100%;
     max-width:800px;
     margin:auto;
@@ -178,7 +179,7 @@ body {
 }
 
 .cajaAtras{
-    max-width: 600px;
+    max-width: 6500px;
     height: 720px;
     padding: 10px 20px;
     display: flex;
@@ -191,7 +192,7 @@ body {
 
 .cajaAtras div{
     top: 40px;
-    left: 110px;
+    left: 25%;
     margin: 0px;
     padding: 30px;
     position: absolute;
@@ -241,8 +242,8 @@ margin: 30px;
     max-width: 350px;
     position: relative;
     top: -220px;
-    left: 50px;
-    transition:left 300ms;
+    left: 10%;
+    
 }
 
 .contenedorFormLoginRegistro form{
@@ -280,6 +281,7 @@ margin: 30px;
     outline: none;
 }
 .formularioLogin{
+    
     margin: 10px;
     opacity: 1;
     display: block;
@@ -297,7 +299,6 @@ margin: 30px;
 /* Fin del login Registro */
 
 
-/* Estilos responsivos para pantallas menores o iguales a 768px */
 @media screen and (max-width: 768px) {
     .contenedor#index {
         grid-template-areas:
@@ -339,6 +340,7 @@ margin: 30px;
     }
 
     .contenedor#login-registro {
+       
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
@@ -347,9 +349,19 @@ margin: 30px;
             "contenido contenido contenido sidebar-2"
             "contenido contenido contenido sidebar-2"
             "widget-2 widget-2 widget-2 widget-2"
+            "contenido contenido contenido contenido" /*contenido contenido sidebar sidebar */
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar-2 sidebar-2 "
             "footer footer footer footer";
     }
-
+    /*registro*/
+    
+    .cajaAtras{
+        max-width: 500px;
+    }
+    
     .contenedor#quienes-somos {
         grid-template-areas:
             "header header header header"
@@ -405,14 +417,15 @@ margin: 30px;
     }
 
     .contenedor#login-registro {
+        grid-template-columns: repeat(2, 50%);
         grid-template-areas:
-            "header header header header"
-            "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar sidebar"
-            "widget-2 widget-2 widget-2 widget-2"
-            "footer footer footer footer";
+            "header header "
+            "widget-1 widget-1 "
+            "contenido contenido "
+            "contenido contenido "
+            "sidebar sidebar "
+            "widget-2 widget-2 "
+            "footer footer ";
     }
 
     .contenedor#quienes-somos {
