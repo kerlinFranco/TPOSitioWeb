@@ -63,6 +63,7 @@ fetch('vinosLocal.json')
                 ofertaCard.innerHTML = `
                     <h3>${oferta.nombre}</h3>
                     <p>${oferta.descripcion}</p>
+                    <h2>${oferta.precioClub}</h2>
                     <a href="${oferta.enlace}" target="blank">Ver oferta</a>
                     
                 `;
