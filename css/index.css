@@ -147,7 +147,7 @@ body {
 }
 
 .contenedorLoginRegistro{
-    grid-area: contenido;
+    
     width:100%;
     max-width:800px;
     margin:auto;
@@ -156,7 +156,7 @@ body {
 }
 
 .cajaAtras{
-    max-width: 600px;
+    max-width: 6500px;
     height: 720px;
     padding: 10px 20px;
     display: flex;
@@ -274,8 +274,33 @@ margin: 30px;
     color: rgb(151, 46, 90);
 }
 /* Fin del login Registro */
-
-
+@media screen and (max-width: 1100px) {
+    .contenedor#login-registro {
+        grid-template-columns: 20% 20% 30% 30%;
+        grid-template-areas:
+            "header header header header"
+            "widget-1 widget-1 widget-1 widget-1"
+            "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
+            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar-2"
+            "contenido contenido contenido sidebar-2"
+            "widget-2 widget-2 widget-2 widget-2"
+            "footer footer footer footer";
+    }
+    /*registro*/
+    /* .cajaAtras div{
+        left: 40px;
+    }
+    .contenedorFormLoginRegistro{
+        left: 6%;
+    }
+    .formularioLogin{
+        max-width: 70%;
+    }
+    .formularioRegistro{
+        max-width: 78%;
+    } */
+}
 @media screen and (max-width: 768px) {
     .contenedor#index {
         grid-template-areas:
@@ -317,30 +342,23 @@ margin: 30px;
     }
 
     .contenedor#login-registro {
+       
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
-            "contenido contenido contenido sidebar"
-            "contenido contenido contenido sidebar-2"
-            "contenido contenido contenido sidebar-2"
-            "widget-2 widget-2 widget-2 widget-2"
+            "contenido contenido contenido contenido" /*contenido contenido sidebar sidebar */
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar-2 sidebar-2 "
             "footer footer footer footer";
     }
     /*registro*/
-    .cajaAtras div{
-        left: 40px;
+    
+    .cajaAtras{
+        max-width: 500px;
     }
-    .contenedorFormLoginRegistro{
-        left: 6%;
-    }
-    .formularioLogin{
-        max-width: 70%;
-    }
-    .formularioRegistro{
-        max-width: 78%;
-    }
-
+    
     .contenedor#quienes-somos {
         grid-template-areas:
             "header header header header"
@@ -391,14 +409,15 @@ margin: 30px;
     }
 
     .contenedor#login-registro {
+        grid-template-columns: repeat(2, 50%);
         grid-template-areas:
-            "header header header header"
-            "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar sidebar"
-            "widget-2 widget-2 widget-2 widget-2"
-            "footer footer footer footer";
+            "header header "
+            "widget-1 widget-1 "
+            "contenido contenido "
+            "contenido contenido "
+            "sidebar sidebar "
+            "widget-2 widget-2 "
+            "footer footer ";
     }
 
     .contenedor#quienes-somos {
