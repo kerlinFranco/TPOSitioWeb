@@ -72,6 +72,8 @@ document.getElementById("reiniciar").addEventListener("click", () => {
   revisarMensajeVacio();
 });
 
+
+
 /** Muestra o esconde el mensaje de que no hay nada en el carrito */
 function revisarMensajeVacio() {
   const productos = JSON.parse(localStorage.getItem("vinos"));

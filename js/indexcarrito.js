@@ -8,7 +8,8 @@ function crearTarjetasProductosInicio(productos){
     nuevoVino.innerHTML = `
     <img src="./imagenes/vinos/malbec/${producto.id}.jpg" alt="Vinos">
     <h3>${producto.nombre}</h3>
-    <p class="precio">$${producto.precio}</p>
+    <p class="precio">$${producto.precio}</p><br>
+    <p class="stoc">${producto.stock}</p>
     <button>Agregar al carrito</button>`
     contenedorTarjetas.appendChild(nuevoVino);
     nuevoVino.getElementsByTagName("button")[0].addEventListener("click",() => agregarAlCarrito(producto))

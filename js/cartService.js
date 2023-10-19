@@ -9,7 +9,7 @@ function agregarAlCarrito(producto){
   if(!memoria || memoria.length === 0) {
     const nuevoProducto = getNuevoProductoParaMemoria(producto)
     localStorage.setItem("vinos",JSON.stringify([nuevoProducto]));
-    actualizarNumeroCarrito();
+    //();
     cantidadProductoFinal = 1;
   }
   else {
@@ -27,7 +27,7 @@ function agregarAlCarrito(producto){
       cantidadProductoFinal = nuevaMemoria[indiceProducto].cantidad;
     }
     localStorage.setItem("vinos",JSON.stringify(nuevaMemoria));
-    actualizarNumeroCarrito();
+    //();
     return cantidadProductoFinal;
   }
 }
@@ -44,7 +44,7 @@ function restarAlCarrito(producto){
     nuevaMemoria.splice(indiceProducto,1)
   };
   localStorage.setItem("vinos",JSON.stringify(nuevaMemoria));
-  actualizarNumeroCarrito();
+  //();
   return cantidadProductoFinal;
 }
 
@@ -55,22 +55,14 @@ function getNuevoProductoParaMemoria(producto){
   return nuevoProducto;
 }
 
-/** Actualiza el número del carrito del header */
-function actualizarNumeroCarrito(){
-  let cuenta = 0;
-  const memoria = JSON.parse(localStorage.getItem("vinos"));
-  if(memoria && memoria.length > 0){
-    cuenta = memoria.reduce((acum, current)=>acum+current.cantidad,0)
-    return cuentaCarritoElement.innerText = cuenta;
-  }
-  cuentaCarritoElement.innerText = 0;
-}
+
 
 /** Reinicia el carrito */
 function reiniciarCarrito(){
   localStorage.removeItem("vinos");
-  actualizarNumeroCarrito();
+  //();
 }
 
 
-actualizarNumeroCarrito();
+
+//reiniciarCarrito();
