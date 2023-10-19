@@ -287,19 +287,7 @@ margin: 30px;
             "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
     }
-    /*registro*/
-    /* .cajaAtras div{
-        left: 40px;
-    }
-    .contenedorFormLoginRegistro{
-        left: 6%;
-    }
-    .formularioLogin{
-        max-width: 70%;
-    }
-    .formularioRegistro{
-        max-width: 78%;
-    } */
+    
 }
 @media screen and (max-width: 768px) {
     .contenedor#index {
