@@ -331,7 +331,7 @@ margin: 30px;
     }
 
     .contenedor#login-registro {
-       
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
@@ -404,7 +404,7 @@ margin: 30px;
             "widget-1 widget-1 "
             "contenido contenido "
             "contenido contenido "
-            "sidebar sidebar "
+            "sidebar sidebar-2 "
             "widget-2 widget-2 "
             "footer footer ";
     }
