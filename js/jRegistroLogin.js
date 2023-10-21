@@ -57,11 +57,13 @@ fetch('vinosLocal.json')
             let num=parseInt((Math.random()*100)+1)
             console.log(num)
             data.forEach(oferta => {
-                if(oferta.id==num){
+                if(oferta.id==1){
                     const ofertaCard = document.createElement('div');
                 ofertaCard.classList.add('oferta-card');
                 ofertaCard.innerHTML = `
                     <h3>${oferta.nombre}</h3>
+                    <img src="${oferta.fotoTarjeta}" alt="Bienvenido a Sara Winery Club"
+                    class="widget">
                     <p>${oferta.descripcion}</p>
                     <h2>${oferta.precioClub}</h2>
                     <a href="${oferta.enlace}" target="blank">Ver oferta</a>

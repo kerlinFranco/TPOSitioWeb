@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Merlot - Bodega Bianchi",
         "descripcion": "Un vino tinto suave y elegante con toques de ciruela y roble.",
-        "fotoTarjeta": "https://imgs.search.brave.com/VFtJXwJLPVkriMuEr6-NaH1vfVfYDqUbOTFsgxBNYYM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2M0L2Fh/LzlhL2M0YWE5YWM3/MmY4M2Q1Njg4NTJi/MmMxNGEzNzAxNTZh/LmpwZw",
+        "fotoTarjeta": "imagenes/vino1.jpg",
         "precio": 25.99,
         "stock": 50,
         "precioClub": 21.99,
