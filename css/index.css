@@ -134,23 +134,24 @@ body {
 
 /* Inicio Login Registro */
 /*Oferta*/
-#ofertas-sidebar{
+#ofertas-sidebar,#ofertas-sidebar2{
     background-color: #fff;
     padding: 10px;
 }
-.oferta-card{
+.oferta-card,.oferta-card2{
     border:#412027 solid ;
     /* background-color: rgb(146, 65, 99); */
     margin-top: 20px;
     padding: 10px;
     /* background-color: #412027; */
 }
+
 .precioDes{
     border: solid ;
     background-color: rgb(179, 83, 155);
 }
 .descrip{
-   
+   padding: 5px;
     display: none;
 }
 .precios{
@@ -161,6 +162,15 @@ body {
     color: #ffffff;
 }
 .oferta-card:hover {
+    
+    .descrip{
+        display:block;
+    }
+    .precios{
+        display: none;
+    }
+}
+.oferta-card2:hover {
     
     .descrip{
         display:block;
@@ -192,7 +202,7 @@ body {
 }
 
 .cajaAtras{
-    max-width: 6500px;
+    max-width: 600px;
     height: 720px;
     padding: 10px 20px;
     display: flex;
@@ -435,6 +445,7 @@ margin: 30px;
 
     .contenedor#login-registro {
         grid-template-columns: repeat(2, 50%);
+        
         grid-template-areas:
             "header header "
             "widget-1 widget-1 "
@@ -443,6 +454,10 @@ margin: 30px;
             "sidebar sidebar-2 "
             "widget-2 widget-2 "
             "footer footer ";
+    }
+    .contenedorFormLoginRegistro form{
+        left:-5%;
+        width: 67%;   
     }
 
     .contenedor#quienes-somos {
