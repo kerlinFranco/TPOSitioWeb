@@ -62,12 +62,23 @@ fetch('vinosLocal.json')
                 ofertaCard.classList.add('oferta-card');
                 ofertaCard.innerHTML = `
                     <h3>${oferta.nombre}</h3>
-                    <img src="${oferta.fotoTarjeta}" alt="Bienvenido a Sara Winery Club"
-                    class="widget">
+                    <span class="imgOfertaClub">
+                    <img src="${oferta.fotoTarjeta}" alt="imgOfertaClub"
+                    class="widget" >
+                    </span>
+                    <div class="precioDes">
+                    <span class="descrip">
                     <p>${oferta.descripcion}</p>
+                    </span>
+                    <div class="precios">
+                    <p><del>${oferta.precio}</del></p>
+                    <span class=precioClub>
                     <h2>${oferta.precioClub}</h2>
+                    </span>
                     <a href="${oferta.enlace}" target="blank">Ver oferta</a>
+                    </div>
                     
+                    </div>
                 `;
                 ofertasSidebar.appendChild(ofertaCard);
                 }

@@ -133,7 +133,43 @@ body {
 }
 
 /* Inicio Login Registro */
+/*Oferta*/
+#ofertas-sidebar{
+    background-color: #fff;
+    padding: 10px;
+}
+.oferta-card{
+    border:#412027 solid ;
+    /* background-color: rgb(146, 65, 99); */
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: #412027; */
+}
+.precioDes{
+    border: solid ;
+    background-color: rgb(179, 83, 155);
+}
+.descrip{
 
+    display: none;
+}
+.precios{
+    display:block;
+}
+.precioClub{
+    font-size: 25px;
+    color: #ffffff;
+}
+.oferta-card:hover {
+    
+    .descrip{
+        display:block;
+    }
+    .precios{
+        display: none;
+    }
+}
+/*Fin Oferta*/
 #parrafoHero{
     background-color: white;
     padding: 30px;
