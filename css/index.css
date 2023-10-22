@@ -52,7 +52,7 @@ body {
 }
 
 .widget {
-    width: 250px;
+    width: 80%;
     height: 350px;
     margin: 20px;
     align-self: auto;
@@ -150,7 +150,7 @@ body {
     background-color: rgb(179, 83, 155);
 }
 .descrip{
-
+   
     display: none;
 }
 .precios{
