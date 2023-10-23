@@ -61,16 +61,17 @@ body {
 .img,
 .heroimage {
     width: 100%;
-    height: 250px;
-    object-fit: contain;
+    height: 430px;
+    object-fit: cover;
     object-position: center;
  /*   max-width: 100%;
     display: block;
 */
 
+
 }
 
-/* Resize images */
+/* Tama;o imagenes automatico */
 .container img {
     width: 100%;
     height: auto;
@@ -98,8 +99,10 @@ body {
     /* grid-template-columns: repeat(4, 2fr); lo cambio para hacer todas las columnas iguales */
   /*  grid-template-rows: repeat(8, auto); lo saco porque no hace falta declararlo */ 
   /*grid-template-columns: repeat(4, minmax(200px, 1fr));*/ /* Pongo este para simplificar y que sean todas iguales */
-  grid-template-columns: repeat(autofill,minmax(25rem,1fr));  
+  /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
   /*width: min(95%, 70rem);*/
+  /*grid-template-columns: repeat(4, 1fr);*/
+  grid-template-columns: 1fr, 1fr, 1fr;
     margin-inline: auto;
 
 }
@@ -481,6 +484,11 @@ margin: 30px;
 
 .contenedor .contenido {
     grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
 }
 
 .contenedor .contenido-2 {
@@ -650,3 +658,24 @@ nav a {
 }
 
 /* Finde Tomado de clase 6 CSS2 */
+
+/* El Call To Action del Hero Section */
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #412027;
+    ; /* Los colores de Saraza */
+    color: #FFF; /* Color del texto BLANCO */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #412027; /* Color para el HOVER,  buscar otro */
+}
+
