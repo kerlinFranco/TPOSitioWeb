@@ -99,13 +99,25 @@ body {
     grid-template-areas:
         "header header header header"
         "widget-1 widget-1 widget-1 widget-1"
-        "contenido contenido contenido sidebar"
+        "contenido contenido sidebar sidebar"
         "widget-2 widget-2 widget-2 widget-2"
         "widget-2 widget-2 widget-2 widget-2"
         "contenido-2 contenido-2 contenido-2 sidebar-2"
         "widget-4 widget-4 widget-4 widget-4"
         "footer footer footer footer";
 }
+/*
+.contenedor#index {
+    grid-template-areas:
+        "header header header header"
+        "widget-1 widget-1 widget-2 widget-2"
+        "widget-1 widget-1 widget-2 widget-2"
+        "contenido contenido widget-3 widget-3"
+        "widget-4 widget-4 contenido-2 contenido-2"
+        "widget-4 widget-4 contenido-2 contenido-2"
+        "widget-4 widget-4 widget-4 widget-4"
+        "footer footer footer footer";
+} */
 
 .contenedor#tienda {
     grid-template-areas:
