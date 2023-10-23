@@ -132,6 +132,39 @@ body {
         "footer footer footer footer";
 }
 
+/*Inicio tienda*/
+.productos{
+    
+}
+.productoCard{
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    
+    display: inline-block;
+    
+}
+
+.card{
+    /*Esto es de la img*/
+    width: 97%;
+}
+.descripTienda{
+    display:none;
+    
+}
+
+.productoCard:hover{
+    width: 400px;
+    .descripTienda{
+        display:block;
+        
+    }
+
+}
+/*Fin tienda*/
+
 /* Inicio Login Registro */
 /*Oferta*/
 #ofertas-sidebar,#ofertas-sidebar2{
