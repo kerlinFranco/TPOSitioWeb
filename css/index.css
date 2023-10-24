@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /*   margin: 0;*/
     padding: 0;
 }
 
@@ -25,6 +25,38 @@
     font-size: 20px;
     /* display: inline-block; Si lo dejo se apilan las palabras */
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
+    /*-webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);*/
+    text-shadow:
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+     -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
+}
+
+/* Estilos base para las tarjetas de los modulos ofertaClub y destacado */
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    /* display: inline-block; */
+    width: calc(50% - 20px);
+    /* Tarjetas ocupan el 50% del ancho de su contenedor */
+    box-sizing: border-box;
+    max-width: 400px;
+    /* Ancho máximo de 400px para evitar que se estiren demasiado */
+}
+
+/* Estilos específicos para la tarjeta con ID=destacado */
+#destacado {
+    background-color: #f9f9f9;
+}
+
+/* Estilos específicos para la tarjeta con ID=ofertaClub */
+#ofertaClub {
+    background-color: #e2f2e6;
 }
 
 
@@ -39,19 +71,29 @@ body {
 .img,
 .heroimage {
     width: 100%;
-    height: 250px;
+    height: 430px;
     object-fit: cover;
     object-position: center;
+    border-radius: 25px;
+    /*   max-width: 100%;
+    display: block;
+*/
+
 
 }
 
-/* Resize images */
+/* Tama;o imagenes automatico */
 .container img {
     width: 100%;
     height: auto;
+    /*background: #fff;*/
 }
 
 .widget {
+    /*max-width: 200px;*/
+    min-inline-size: 100px;
+    /*height: auto;*/
+    /*   margin: 20px;*/
     width: 80%;
     height: 350px;
     margin: 20px;
@@ -66,9 +108,15 @@ body {
     display: grid;
     grid-gap: 0px;
     /* gap entre sectores */
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(8, auto);
-
+    /* grid-template-columns: repeat(4, 2fr); lo cambio para hacer todas las columnas iguales */
+    /*  grid-template-rows: repeat(8, auto); lo saco porque no hace falta declararlo */
+    /*grid-template-columns: repeat(4, minmax(200px, 1fr));*/
+    /* Pongo este para simplificar y que sean todas iguales */
+    /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
+    /*width: min(95%, 70rem);*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: 1fr, 1fr, 1fr;
+    margin-inline: auto;
 
 }
 
@@ -76,11 +124,11 @@ body {
     grid-template-areas:
         "header header header header"
         "widget-1 widget-1 widget-1 widget-1"
-        "contenido contenido contenido sidebar"
+        "contenido contenido sidebar sidebar"
         "widget-2 widget-2 widget-2 widget-2"
         "widget-2 widget-2 widget-2 widget-2"
         "contenido-2 contenido-2 contenido-2 sidebar-2"
-        "widget-4 widget-4 widget-4 widget-4"
+        "testimonios testimonios testimonios testimonios"
         "footer footer footer footer";
 }
 
@@ -92,7 +140,7 @@ body {
         "sidebar contenido contenido sidebar-2"
         "sidebar contenido contenido sidebar-2"
         "sidebar contenido contenido sidebar-2"
-        "widget-4 widget-4 widget-4 widget-4"
+        "testimonios testimonios testimonios testimonios"
         "footer footer footer footer";
 }
 
@@ -218,23 +266,24 @@ body {
     padding: 30px;
 
 }
-.parrafo{
-    
+
+.parrafo {
+
     color: rgb(151, 46, 90);
-    
-    
+
+
 }
 
-.contenedorLoginRegistro{
+.contenedorLoginRegistro {
     
-    width:100%;
-    max-width:800px;
-    margin:auto;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
     position: relative;
 
 }
 
-.cajaAtras{
+.cajaAtras {
     max-width: 600px;
     height: 720px;
     padding: 10px 20px;
@@ -247,7 +296,7 @@ body {
     border-radius: 15px;
 }
 
-.cajaAtras div{
+.cajaAtras div {
     top: 40px;
     left: 25%;
     margin: 0px;
@@ -257,16 +306,18 @@ body {
     color: white;
     /* transition: all 500ms;  */
 }
+
 .cajaAtras div p,
-.cajaAtras div button{
-margin: 30px;
+.cajaAtras div button {
+    margin: 30px;
 }
-.cajaAtras div h3{
+
+.cajaAtras div h3 {
     font-weight: 400;
     font-size: 30px;
 }
 
-.cajaAtras button{
+.cajaAtras button {
     padding: 10px 40px;
     border: 2px solid white;
     background: transparent;
@@ -278,21 +329,22 @@ margin: 30px;
     transition: 300ms;
 }
 
-.cajaLogin{
+.cajaLogin {
     opacity: 0;
     display: "none";
 }
-.cajaAtrasRegistro{
+
+.cajaAtrasRegistro {
     opacity: 1;
     display: block;
 }
 
-.cajaAtras button:hover{
+.cajaAtras button:hover {
     background: white;
     color: rgb(151, 46, 90);
 }
 
-.contenedorFormLoginRegistro{
+.contenedorFormLoginRegistro {
     display: flex;
     align-items: center;
     width: 100%;
@@ -303,7 +355,7 @@ margin: 30px;
     
 }
 
-.contenedorFormLoginRegistro form{
+.contenedorFormLoginRegistro form {
     width: 100%;
     padding: 60px 40px;
     background: rgb(255, 255, 255);
@@ -311,14 +363,14 @@ margin: 30px;
     border-radius: 20px;
 }
 
-.contenedorFormLoginRegistro form h2{
+.contenedorFormLoginRegistro form h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color: rgb(151, 46, 90);
 }
 
-.contenedorFormLoginRegistro form input{
+.contenedorFormLoginRegistro form input {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -327,7 +379,8 @@ margin: 30px;
     font-size: 16px;
     outline: none;
 }
-.contenedorFormLoginRegistro form button{
+
+.contenedorFormLoginRegistro form button {
     padding: 10px 40px;
     margin-top: 40px;
     border-radius: 10px;
@@ -342,17 +395,20 @@ margin: 30px;
     margin: 10px;
     opacity: 1;
     display: block;
-   
+
 }
-.formularioRegistro{
+
+.formularioRegistro {
     bottom: -150px;
     display: none;
 
 }
-.mensaje{
+
+.mensaje {
     margin: 10px;
     color: rgb(151, 46, 90);
 }
+
 /* Fin del login Registro */
 @media screen and (max-width: 1100px) {
     .contenedor#login-registro {
@@ -374,14 +430,10 @@ margin: 30px;
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "widget-2 widget-2 widget-2 widget-2"
             "sidebar sidebar sidebar sidebar"
-            "widget-3 widget-3 widget-3 widget-3"
-            "contenido-2 contenido-2 contenido-2 contenido-2"
-            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-            "widget-4 widget-4 widget-4 widget-4"
+            "contenido contenido contenido contenido"
+            "contenido-2 contenido-2 contenido-2 sidebar-2"
+            "testimonios testimonios testimonios testimonios"
             "footer footer footer footer";
     }
 
@@ -393,7 +445,7 @@ margin: 30px;
             "contenido contenido sidebar sidebar"
             "contenido-2 contenido-2 sidebar-2 sidebar-2"
             "contenido-2 contenido-2 widget-2 widget-2"
-            "widget-4 widget-4 widget-4 widget-4"
+            "testimonios testimonios testimonios testimonios"
             "footer footer footer footer";
     }
 
@@ -438,6 +490,15 @@ margin: 30px;
             "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
     }
+
+    .tarjeta {
+        width: 100%;
+        /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 768px */
+        max-width: 500px;
+        /* Ancho máximo de 500px */
+        margin: 5px;
+        /* Reduce el margen para un espaciado más compacto */
+    }
 }
 
 
@@ -452,7 +513,7 @@ margin: 30px;
             "widget-3 widget-3 widget-3 widget-3"
             "contenido-2 contenido-2 contenido-2 contenido-2"
             "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-            "widget-4 widget-4 widget-4 widget-4"
+            "testimonios testimonios testimonios testimonios"
             "footer footer footer footer";
     }
 
@@ -502,7 +563,19 @@ margin: 30px;
             "sidebar sidebar sidebar sidebar"
             "footer footer footer footer";
     }
+
+    .tarjeta {
+        width: 100%;
+        /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 500px */
+        max-width: none;
+        /* Elimina el ancho máximo */
+        margin: 5px;
+        /* Reduce el margen para un espaciado más compacto */
+    }
 }
+
+
+
 
 
 
@@ -519,7 +592,6 @@ margin: 30px;
 
 .contenedor .contenido,
 .contenedor .sidebar,
-.contenedor .contenido-2,
 .contenedor .sidebar-2,
 .contenedor .footer {
     background: #fff;
@@ -527,20 +599,55 @@ margin: 30px;
     /*  padding de los sectores */
     border-radius: 0px;
     /* elimine el borde redondeado */
+    /*    display: inline-block; */
 }
 
+.contenedor .contenido-2 {
+    background: #fcf4eb;
+    padding: 20px;
+    /*  padding de los sectores */
+    border-radius: 0px;
+    /* elimine el borde redondeado */
+    /*    display: inline-block; */
+}
+
+
 .contenedor .header {
-    background: #ffffff;
+    /* background: #ffffff;*/
+    background-image: url('../imagenes/wineHero.jpg');
+    /* Imagen de background */
     color: #5f5f5f;
     grid-area: header;
     text-align: center;
     align-items: center;
 
+    background-size: 100% 300px;
+    /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    color: #fff;
+    /* Color del texto dentro del encabezado */
+    text-align: center;
+    /* Alinea el texto al centro */
+    padding: 20px;
+    /* Espacio interno para el contenido */
+
 }
 
 .contenedor .contenido {
     grid-area: contenido;
+<<<<<<< HEAD
    
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    min-width: 270px;
+>>>>>>> main
 }
 
 .contenedor .contenido-2 {
@@ -550,8 +657,7 @@ margin: 30px;
 
 
 .contenedor .sidebar {
-    grid-column: 3 / 4;
-    background: #fcf4eb;
+
     text-align: center;
     /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
     padding: 10px;
@@ -559,34 +665,51 @@ margin: 30px;
     justify-content: center;
     min-height: 100px;
     grid-area: sidebar;
+    object-fit: cover;
+    object-position: center;
 }
 
 .contenedor .sidebar-2 {
-    grid-column: 3 / 4;
+    /*   grid-column: 3 / 4;*/
+    /*background: #fcf4eb;*/
+    text-align: center;
+    /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    min-height: 100px;
+    grid-area: sidebar-2;
+}
+
+.contenedor .sidebar-login {
+    /*   grid-column: 3 / 4;*/
     background: #fcf4eb;
     text-align: center;
     /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
     padding: 10px;
     align-items: center;
     justify-content: center;
+    display: inline-block;
     min-height: 100px;
     grid-area: sidebar-2;
 }
 
-
 .contenedor .widget-1 {
-    background: #412027;
+    /*background: #fcf4eb;*/
+    background: #FFF;
     color: #fff;
     height: auto;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    grid-auto-rows: 2rem;
+    /*  align-items: stretch; */
+    /*  grid-auto-rows: 2rem; */
     padding: 0px;
     /*  padding de los sectores */
-
-
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .contenedor .widget-2 {
@@ -609,14 +732,27 @@ margin: 30px;
     justify-content: center;
 }
 
-.contenedor .widget-4 {
+.contenedor .testimonios {
     background: #ffffff;
     color: #412027;
-    height: 100px;
+    /*   height: 100px; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    display: inline-block;
+    height: auto;
+    /*  align-items: stretch; */
+    /*  grid-auto-rows: 2rem; */
+    padding: 0px;
+    /*  padding de los sectores */
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+
+
+
+
 }
 
 .contenedor .widget-1 {
@@ -632,8 +768,12 @@ margin: 30px;
     grid-area: widget-3;
 }
 
-.contenedor .widget-4 {
-    grid-area: widget-4;
+.contenedor .testimonios {
+    grid-area: testimonios;
+}
+
+.contenedor .sidebar-login {
+    grid-area: sidebar-login;
 }
 
 .contenedor .footer {
@@ -676,10 +816,29 @@ h1 {
 nav a {
     padding: 10px;
 
-
-
-
-
 }
 
 /* Finde Tomado de clase 6 CSS2 */
+
+/* El Call To Action del Hero Section */
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #412027;
+    ;
+    /* Los colores de Saraza */
+    color: #FFF;
+    /* Color del texto BLANCO */
+    text-decoration: none;
+    border: none;
+    border-radius: 45px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #412027;
+    /* Color para el HOVER,  buscar otro */
+}
