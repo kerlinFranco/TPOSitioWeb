@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregado para cargar Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- Fin de Agregado para cargar Google Fonts -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/css/tarjetasVinos.css">
+
+    <title>Saraza Winery Club - Inicio</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header animate__animated animate__bounce">
+            <h2>Inicio</h2>
+        </header>
+    </div>
+    <div class="widget-1">
+        <main class="carrito-principal">
+            
+            <div id="carrito-vacio">
+                <p>Ups! El carrito está vacío</p>
+                <a href="./tienda.html" id="link-tienda">elige algunos productos</a>
+            </div>
+            <section id="cart-container"></section>
+            <section id="totales">
+                <p>Total unidades: <span id="cantidad">0</span></p>
+                <p>Total precio: $<span id="precio">0</span></p>
+                <button>Comprar</button>
+                <button id="reiniciar">Reiniciar</button>
+            </section>
+        </main>
+    </div>
+
+    <div class="contenedor">
+        <footer class="footer" >
+            <h3>Footer</h3>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+    
+    <script src="./js/vinos.js"></script>
+    <script src="./js/cartService.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+
+</body>
+</html>
+

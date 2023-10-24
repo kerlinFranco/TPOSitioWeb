@@ -540,6 +540,7 @@ margin: 30px;
 
 .contenedor .contenido {
     grid-area: contenido;
+   
 }
 
 .contenedor .contenido-2 {
@@ -620,6 +621,7 @@ margin: 30px;
 
 .contenedor .widget-1 {
     grid-area: widget-1;
+    
 }
 
 .contenedor .widget-2 {
@@ -651,6 +653,7 @@ margin: 30px;
 
 h1 {
     text-align: center;
+    
 }
 
 .navheader {
