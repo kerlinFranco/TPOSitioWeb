@@ -1,5 +1,5 @@
 * {
- /*   margin: 0;*/
+    /*   margin: 0;*/
     padding: 0;
 }
 
@@ -25,6 +25,14 @@
     font-size: 20px;
     /* display: inline-block; Si lo dejo se apilan las palabras */
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
+    /*-webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);*/
+    text-shadow:
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+     -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
 }
 
 /* Estilos base para las tarjetas de los modulos ofertaClub y destacado */
@@ -34,9 +42,11 @@
     padding: 10px;
     margin: 10px;
     /* display: inline-block; */
-    width: calc(50% - 20px); /* Tarjetas ocupan el 50% del ancho de su contenedor */
+    width: calc(50% - 20px);
+    /* Tarjetas ocupan el 50% del ancho de su contenedor */
     box-sizing: border-box;
-    max-width: 400px; /* Ancho máximo de 400px para evitar que se estiren demasiado */
+    max-width: 400px;
+    /* Ancho máximo de 400px para evitar que se estiren demasiado */
 }
 
 /* Estilos específicos para la tarjeta con ID=destacado */
@@ -64,7 +74,8 @@ body {
     height: 430px;
     object-fit: cover;
     object-position: center;
- /*   max-width: 100%;
+    border-radius: 25px;
+    /*   max-width: 100%;
     display: block;
 */
 
@@ -82,10 +93,10 @@ body {
     /*max-width: 200px;*/
     min-inline-size: 100px;
     /*height: auto;*/
- /*   margin: 20px;*/
+    /*   margin: 20px;*/
     align-self: auto;
     object-fit: scale-down;
-    display:grid;
+    display: grid;
     background: #fff;
 }
 
@@ -97,12 +108,13 @@ body {
     grid-gap: 0px;
     /* gap entre sectores */
     /* grid-template-columns: repeat(4, 2fr); lo cambio para hacer todas las columnas iguales */
-  /*  grid-template-rows: repeat(8, auto); lo saco porque no hace falta declararlo */ 
-  /*grid-template-columns: repeat(4, minmax(200px, 1fr));*/ /* Pongo este para simplificar y que sean todas iguales */
-  /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
-  /*width: min(95%, 70rem);*/
-  /*grid-template-columns: repeat(4, 1fr);*/
-  grid-template-columns: 1fr, 1fr, 1fr;
+    /*  grid-template-rows: repeat(8, auto); lo saco porque no hace falta declararlo */
+    /*grid-template-columns: repeat(4, minmax(200px, 1fr));*/
+    /* Pongo este para simplificar y que sean todas iguales */
+    /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
+    /*width: min(95%, 70rem);*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: 1fr, 1fr, 1fr;
     margin-inline: auto;
 
 }
@@ -169,27 +181,28 @@ body {
 
 /* Inicio Login Registro */
 
-#parrafoHero{
+#parrafoHero {
     background-color: white;
     padding: 30px;
 
 }
-.parrafo{
-    
+
+.parrafo {
+
     color: rgb(151, 46, 90);
-    
-    
+
+
 }
 
-.contenedorLoginRegistro{
-    width:100%;
-    max-width:800px;
-    margin:auto;
+.contenedorLoginRegistro {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
     position: relative;
 
 }
 
-.cajaAtras{
+.cajaAtras {
     max-width: 600px;
     height: 720px;
     padding: 10px 20px;
@@ -197,11 +210,11 @@ body {
     flex-direction: column;
     justify-content: center;
     /* backdrop-filter: blur(10px); */
-    background-color:rgba(29, 29, 28, 0.5);
+    background-color: rgba(29, 29, 28, 0.5);
     border-radius: 15px;
 }
 
-.cajaAtras div{
+.cajaAtras div {
     top: 40px;
     left: 110px;
     margin: 0px;
@@ -211,16 +224,18 @@ body {
     color: white;
     /* transition: all 500ms;  */
 }
+
 .cajaAtras div p,
-.cajaAtras div button{
-margin: 30px;
+.cajaAtras div button {
+    margin: 30px;
 }
-.cajaAtras div h3{
+
+.cajaAtras div h3 {
     font-weight: 400;
     font-size: 30px;
 }
 
-.cajaAtras button{
+.cajaAtras button {
     padding: 10px 40px;
     border: 2px solid white;
     background: transparent;
@@ -232,21 +247,22 @@ margin: 30px;
     transition: 300ms;
 }
 
-.cajaLogin{
+.cajaLogin {
     opacity: 0;
     display: "none";
 }
-.cajaAtrasRegistro{
+
+.cajaAtrasRegistro {
     opacity: 1;
     display: block;
 }
 
-.cajaAtras button:hover{
+.cajaAtras button:hover {
     background: white;
     color: rgb(151, 46, 90);
 }
 
-.contenedorFormLoginRegistro{
+.contenedorFormLoginRegistro {
     display: flex;
     align-items: center;
     width: 100%;
@@ -254,10 +270,10 @@ margin: 30px;
     position: relative;
     top: -220px;
     left: 50px;
-    transition:left 300ms;
+    transition: left 300ms;
 }
 
-.contenedorFormLoginRegistro form{
+.contenedorFormLoginRegistro form {
     width: 100%;
     padding: 60px 40px;
     background: rgb(255, 255, 255);
@@ -265,14 +281,14 @@ margin: 30px;
     border-radius: 20px;
 }
 
-.contenedorFormLoginRegistro form h2{
+.contenedorFormLoginRegistro form h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color: rgb(151, 46, 90);
 }
 
-.contenedorFormLoginRegistro form input{
+.contenedorFormLoginRegistro form input {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -281,7 +297,8 @@ margin: 30px;
     font-size: 16px;
     outline: none;
 }
-.contenedorFormLoginRegistro form button{
+
+.contenedorFormLoginRegistro form button {
     padding: 10px 40px;
     margin-top: 40px;
     border-radius: 10px;
@@ -291,21 +308,25 @@ margin: 30px;
     cursor: pointer;
     outline: none;
 }
-.formularioLogin{
+
+.formularioLogin {
     margin: 10px;
     opacity: 1;
     display: block;
-   
+
 }
-.formularioRegistro{
+
+.formularioRegistro {
     bottom: -150px;
     display: none;
 
 }
-.mensaje{
+
+.mensaje {
     margin: 10px;
     color: rgb(151, 46, 90);
 }
+
 /* Fin del login Registro */
 
 
@@ -321,7 +342,7 @@ margin: 30px;
             "testimonios testimonios testimonios testimonios"
             "footer footer footer footer";
     }
- 
+
     .contenedor#tienda {
         grid-template-areas:
             "header header header header"
@@ -369,10 +390,14 @@ margin: 30px;
             "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
     }
+
     .tarjeta {
-        width: 100%; /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 768px */
-        max-width: 500px; /* Ancho máximo de 500px */
-        margin: 5px; /* Reduce el margen para un espaciado más compacto */
+        width: 100%;
+        /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 768px */
+        max-width: 500px;
+        /* Ancho máximo de 500px */
+        margin: 5px;
+        /* Reduce el margen para un espaciado más compacto */
     }
 }
 
@@ -432,10 +457,14 @@ margin: 30px;
             "sidebar sidebar sidebar sidebar"
             "footer footer footer footer";
     }
+
     .tarjeta {
-        width: 100%; /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 500px */
-        max-width: none; /* Elimina el ancho máximo */
-        margin: 5px; /* Reduce el margen para un espaciado más compacto */
+        width: 100%;
+        /* Ocupa el 100% del ancho cuando el ancho de pantalla es menor o igual a 500px */
+        max-width: none;
+        /* Elimina el ancho máximo */
+        margin: 5px;
+        /* Reduce el margen para un espaciado más compacto */
     }
 }
 
@@ -447,7 +476,7 @@ margin: 30px;
 
 
 .contenedor>div,
-.contenedor  .header {
+.contenedor .header {
     background: #fff;
     padding: 20px;
     /*  padding de los sectores */
@@ -457,14 +486,14 @@ margin: 30px;
 
 .contenedor .contenido,
 .contenedor .sidebar,
-.contenedor .sidebar-2 ,
+.contenedor .sidebar-2,
 .contenedor .footer {
     background: #fff;
     padding: 20px;
     /*  padding de los sectores */
     border-radius: 0px;
     /* elimine el borde redondeado */
-/*    display: inline-block; */
+    /*    display: inline-block; */
 }
 
 .contenedor .contenido-2 {
@@ -473,24 +502,31 @@ margin: 30px;
     /*  padding de los sectores */
     border-radius: 0px;
     /* elimine el borde redondeado */
-/*    display: inline-block; */
+    /*    display: inline-block; */
 }
 
 
 .contenedor .header {
-   /* background: #ffffff;*/
-    background-image: url('../imagenes/wineHero.jpg'); /* Imagen de background */
+    /* background: #ffffff;*/
+    background-image: url('../imagenes/wineHero.jpg');
+    /* Imagen de background */
     color: #5f5f5f;
     grid-area: header;
     text-align: center;
     align-items: center;
 
-    background-size: 100% 300px ; /* Ajusta el tamaño de la imagen al contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: #fff; /* Color del texto dentro del encabezado */
-    text-align: center; /* Alinea el texto al centro */
-    padding: 20px; /* Espacio interno para el contenido */
+    background-size: 100% 300px;
+    /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    color: #fff;
+    /* Color del texto dentro del encabezado */
+    text-align: center;
+    /* Alinea el texto al centro */
+    padding: 20px;
+    /* Espacio interno para el contenido */
 
 }
 
@@ -511,8 +547,7 @@ margin: 30px;
 
 
 .contenedor .sidebar {
-/*    grid-column: 3 / 4;*/
-    background: #fcf4eb;
+
     text-align: center;
     /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
     padding: 10px;
@@ -525,7 +560,7 @@ margin: 30px;
 }
 
 .contenedor .sidebar-2 {
- /*   grid-column: 3 / 4;*/
+    /*   grid-column: 3 / 4;*/
     /*background: #fcf4eb;*/
     text-align: center;
     /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
@@ -539,26 +574,27 @@ margin: 30px;
 
 .contenedor .sidebar-login {
     /*   grid-column: 3 / 4;*/
-       background: #fcf4eb;
-       text-align: center;
-       /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
-       padding: 10px;
-       align-items: center;
-       justify-content: center;
-       display: inline-block;
-       min-height: 100px;
-       grid-area: sidebar-2;
-   }
+    background: #fcf4eb;
+    text-align: center;
+    /* display: flex; lo saco para que el titulo aparezca arriba de la imagen */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    min-height: 100px;
+    grid-area: sidebar-2;
+}
 
 .contenedor .widget-1 {
-    background: #fcf4eb;
+    /*background: #fcf4eb;*/
+    background: #FFF;
     color: #fff;
     height: auto;
     text-align: center;
     display: flex;
     justify-content: center;
-  /*  align-items: stretch; */
-  /*  grid-auto-rows: 2rem; */
+    /*  align-items: stretch; */
+    /*  grid-auto-rows: 2rem; */
     padding: 0px;
     /*  padding de los sectores */
     object-fit: cover;
@@ -589,15 +625,15 @@ margin: 30px;
 .contenedor .testimonios {
     background: #ffffff;
     color: #412027;
- /*   height: 100px; */
+    /*   height: 100px; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     display: inline-block;
     height: auto;
-  /*  align-items: stretch; */
-  /*  grid-auto-rows: 2rem; */
+    /*  align-items: stretch; */
+    /*  grid-auto-rows: 2rem; */
     padding: 0px;
     /*  padding de los sectores */
     object-fit: cover;
@@ -656,7 +692,7 @@ h1 {
     border: 1px solid rgb(241, 241, 234);
     padding: 10px;
     border-radius: 5px;
-    display: inline-block; 
+    display: inline-block;
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
 }
 
@@ -679,16 +715,18 @@ nav a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #412027;
-    ; /* Los colores de Saraza */
-    color: #FFF; /* Color del texto BLANCO */
+    ;
+    /* Los colores de Saraza */
+    color: #FFF;
+    /* Color del texto BLANCO */
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 45px;
     font-size: 18px;
     margin-top: 10px;
 }
 
 .button:hover {
-    background-color: #412027; /* Color para el HOVER,  buscar otro */
+    background-color: #412027;
+    /* Color para el HOVER,  buscar otro */
 }
-
