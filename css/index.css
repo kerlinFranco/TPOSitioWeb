@@ -136,14 +136,13 @@ body {
 .productos{
     
 }
-.productoCard{
+.tarjeta-producto{
     border: 1px solid #ccc;
     margin: 10px;
     padding: 10px;
     width: 200px; /* Ajusta el ancho según tus necesidades */
-    
     display: inline-block;
-    
+  
 }
 
 .card{
@@ -155,8 +154,9 @@ body {
     
 }
 
-.productoCard:hover{
-    width: 400px;
+.tarjeta-producto:hover{
+   width: 85%;
+   
     .descripTienda{
         display:block;
         

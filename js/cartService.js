@@ -14,7 +14,7 @@ function agregarAlCarrito(producto){
   }
   else {
     //Si hay localstorage me fijo si el artículo ya está ahí
-    const indiceProducto = memoria.findIndex(vinosMalbec => vinosMalbec.id === producto.id)
+    const indiceProducto = memoria.findIndex(vinosLocal => vinosLocal.id === producto.id)
     const nuevaMemoria = memoria;
     //Si el producto no está en el carrito lo agrego
     if(indiceProducto === -1){
@@ -36,7 +36,7 @@ function agregarAlCarrito(producto){
 function restarAlCarrito(producto){
   let memoria = JSON.parse(localStorage.getItem("vinos"));
   let cantidadProductoFinal = 0;
-  const indiceProducto = memoria.findIndex(vinosMalbec => vinosMalbec.id === producto.id)
+  const indiceProducto = memoria.findIndex(vinosLocal => vinosLocal.id === producto.id)
   let nuevaMemoria = memoria;
   nuevaMemoria[indiceProducto].cantidad--;
   cantidadProductoFinal = nuevaMemoria[indiceProducto].cantidad;

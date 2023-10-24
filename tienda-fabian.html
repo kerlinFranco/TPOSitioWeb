@@ -23,42 +23,26 @@
             <h2>Inicio</h2>
         </header>
         <div class="widget-1">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO UN CARUSEL CON OFERTAS - CLASS=WIDGET-1  SI CAMBIAS A WIDGET-2 CAMBIAS EL ESQUEMA DE COLORES / Y LA IMAGEN SAQUENLA O PONGAN OTRA COSA</p>
             <img src="./imagenes/wineHero.jpg" alt="Bienvenidos a Saraza Wine Club" class="heroimage">
         </div>
         <main class="contenido">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO LAS TARJETAS CON LOS PRODUCTOS EXHIBIDOS PARA ELEGIR- CLASS=CONTENIDO</p>
-            <h1>PRODUCTOS</h1>
-            <br><br>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis rutrum gravida. Aliquam
-                vel
-                nunc sit amet nibh aliquam sollicitudin eu vitae elit. Duis varius turpis est, at feugiat metus
-                blandit
-                non. Mauris est nunc, ullamcorper nec egestas at, faucibus ac ex. Cras gravida ut odio eget
-                vulputate.
-                <br><br>
-
-                Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper
-                nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor
-                tortor, sagittis ac mattis sed, ullamcorper et orci. Pellentesque quis mollis massa. Donec lacinia
-                turpis sapien, eu tincidunt dui rutrum elementum. Maecenas dictum et metus eget aliquam.
-            </p>
+         
+            <h1>Vinos </h1>
+            <section class="contenido" id="productos-container">
+            </section>
             <div class="productos" id="contenidoTienda">
                 <section id="cart-container"></section>
             </div>
 
         </main>
         <aside class="sidebar">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO TARJETAS DE PRODUCTOS DESTACADOS- CLASS=SIDEBAR</p>
-            <h1>DESTACADOS</h1>
-            <img src="./imagenes/f581acf4e3f6cfc34a0dd1b3a334a9db.jpg" alt="Bienvenido a Sara Winery Club" class="widget">
+            <h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>
+            <div id="ofertas-sidebar"></div>
         </aside>
         <aside class="sidebar-2">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO TARJETAS DE OFERTAS - CLASS=SIDEBAR-2</p>
-            <h1>OFERTAS SIDEBAR-2</h1>
-            <img src="./imagenes/b825a588d1b9b5f9151155749872da15.jpg" alt="Entrar a Saraza Wine Club" class="widget">
             
+            <h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>
+            <div id="ofertas-sidebar2"></div>
         </aside>
         <div class="widget-2">
             <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO CARUSEL DE PRODUCTOS RELACIONADOS - CLASS=WIDGET-2</p>
@@ -69,8 +53,10 @@
         </footer>
         <script src="./js/menu.js"></script>
         <!-- <script src="./js/index.js"></script> -->
-        <script src="js/tienda.js"></script>
+        <!-- <script src="js/tienda.js"></script> -->
         <!-- <script src="js/carrito.js"></script> -->
+        <script src="./js/cartService.js" defer></script>
+        <script src="./js/indexcarrito.js"></script>
     </div>
 
 </body>
