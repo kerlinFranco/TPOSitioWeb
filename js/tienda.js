@@ -1,7 +1,7 @@
 fetch('vinosLocal.json') 
         .then(response => response.json())
         .then(data => {
-            const ofertasSidebar = document.getElementById('productos');
+            const ofertasSidebar = document.getElementById('contenidoTienda');
 
             data.forEach(oferta => {
                 let num=0;
@@ -17,6 +17,12 @@ fetch('vinosLocal.json')
                     <div class="">
                     <span class="descripTienda">
                     <p>${oferta.descripcion}</p>
+                    <button id="restarCantidad">-</button>
+                    <p id="cantidadProducto">0</p>
+                    <button id="sumarCantidad">+</button>
+                    <br>
+                    <button id="botonCompra">Comprar</button>
+                    
                     </span>
                     <div class="preciosTienda">
                     <h2>${oferta.precio}</h2>
