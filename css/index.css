@@ -392,10 +392,11 @@ body {
 }
 .formularioLogin{
     
-    margin: 10px;
-    opacity: 1;
-    display: block;
-
+/* margin: 10px; */
+    
+opacity: 1;
+    
+display: block;
 }
 
 .formularioRegistro {
@@ -466,12 +467,12 @@ body {
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido contenido" /*contenido contenido sidebar sidebar */
-            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido" /*contenido contenido sidebar sidebar;;
+        "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
             "sidebar sidebar sidebar-2 sidebar-2 "
-            "footer footer footer footer";
+            "footer footer footer footer"; */;
     }
     /*registro*/
     
@@ -533,22 +534,27 @@ body {
             "widget-1 widget-1 widget-1 widget-1"
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar-2 sidebar-2"
+            "sidebar sidebar sidebar-2 sidebar-2"
             "footer footer footer footer";
     }
 
     .contenedor#login-registro {
-        grid-template-columns: repeat(2, 50%);
-        
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-            "header header "
-            "widget-1 widget-1 "
-            "contenido contenido "
-            "contenido contenido "
-            "sidebar sidebar-2 "
-            "widget-2 widget-2 "
-            "footer footer ";
+            "header header header header"
+            "widget-1 widget-1 widget-1 widget-1"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar-2 sidebar-2"
+            "sidebar sidebar sidebar-2 sidebar-2"
+            "footer footer footer footer";
     }
+
+    
+
+
+
     .contenedorFormLoginRegistro form{
         left:-5%;
         width: 67%;   
@@ -638,16 +644,12 @@ body {
 
 .contenedor .contenido {
     grid-area: contenido;
-<<<<<<< HEAD
-   
-=======
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     display: inline-flex;
     min-width: 270px;
->>>>>>> main
 }
 
 .contenedor .contenido-2 {
