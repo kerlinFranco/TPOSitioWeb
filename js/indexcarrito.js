@@ -1,56 +1,38 @@
+const contenedorTarjetas = document.getElementById("productos-container");
 
-// css del registro y login
-document.getElementById("bRegistrar").addEventListener("click",registro);
-document.getElementById("bIniciarSession").addEventListener("click",login);
-// window.addEventListener("resize",anchoPag);
 
-let cajaAtras=document.querySelector(".cajaAtras");
-let cajaAtrasDiv=document.querySelector(".cajaAtras div");
-let contenedorLoginRegistro=document.querySelector(".contenedorLoginRegistro");
-let formularioLogin=document.querySelector(".formularioLogin");
-let formularioRegistro=document.querySelector(".formularioRegistro");
-let cajaAtrasLogin=document.querySelector(".cajaLogin");
-let cajaAtrasRegistro=document.querySelector(".cajaRegistro");
-
-// function anchoPag(){
- 
-//     if(window.innerWidth>768){
-
-//     }else{
-
-//     }
-
-// }
-// anchoPag();
-
-function registro(){
-    formularioRegistro.style.display="block";
-    formularioLogin.style.display="none";
-    cajaAtras.style.height="820px";
-    cajaAtrasRegistro.style.display="none";
-    cajaAtrasRegistro.style.opacity="0";
-    cajaAtrasLogin.style.display="block";
-    cajaAtrasLogin.style.opacity="1";
+function crearTarjetasProductosInicio(productos){
+  productos.forEach(producto => {
+    const nuevoVino = document.createElement("div");
+    nuevoVino.classList = "tarjeta-producto"
+    nuevoVino.innerHTML = `
+    <img src="imagenes/bodega/vino${producto.id}.jpg" alt="Vinos" class="card">
+    <h3>${producto.nombre}</h3>
+    <span class="descripTienda">
+     <p>${producto.descripcion}</p>
+      <p class="stock">${producto.stock}</p>
+    <button>Agregar al carrito</button>
+    </span>
+    <p class="precio">$${producto.precio}</p><br>
     
+    `
 
-    
+    contenedorTarjetas.appendChild(nuevoVino);
+    nuevoVino.getElementsByTagName("button")[0].addEventListener("click",() => agregarAlCarrito(producto))
+  });
 }
 
-function login(){
-    formularioRegistro.style.display="none";
-    formularioLogin.style.display="block";
-    cajaAtras.style.height="720px";
-    cajaAtrasRegistro.style.display="block";
-    cajaAtrasRegistro.style.opacity="1";
-    cajaAtrasLogin.style.display="none";
-    cajaAtrasLogin.style.opacity="0";
-
-
-}
-//fin del css
-//consumo de json para oferta en registro
 
 fetch('vinosLocal.json') 
+        .then(response => response.json())
+        .then(data => {
+
+
+          crearTarjetasProductosInicio(data);
+        })
+
+function crearOfertas(){
+  fetch('vinosLocal.json') 
         .then(response => response.json())
         .then(data => {
             const ofertasSidebar = document.getElementById('ofertas-sidebar');
@@ -61,7 +43,7 @@ fetch('vinosLocal.json')
                     const ofertaCard = document.createElement('div');
                 ofertaCard.classList.add('oferta-card');
                 ofertaCard.innerHTML = `
-                    <h2 class="nombreOferta">${oferta.nombre}</h2>
+                    <h3>${oferta.nombre}</h3>
                     <span class="imgOfertaClub">
                     <img src="${oferta.fotoTarjeta}" alt="imgOfertaClub"
                     class="widget" >
@@ -122,3 +104,5 @@ fetch('vinosLocal.json')
         .catch(error => {
             console.error('Error al cargar las ofertas: ', error);
         });
+}
+crearOfertas();

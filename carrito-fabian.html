@@ -22,38 +22,33 @@
         <header class="header animate__animated animate__bounce">
             <h2>Inicio</h2>
         </header>
-        <div class="widget-1">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO LA DIRECCION DE ENTREGA DEL CLIENTE - CLASS=WIDGET-1  SI CAMBIAS A WIDGET-2 CAMBIAS EL ESQUEMA DE COLORES / Y LA IMAGEN SAQUENLA O PONGAN OTRA COSA</p>
+        <!-- <div class="widget-1">
+           
             <img src="./imagenes/wineHero.jpg" alt="Bienvenidos a Saraza Wine Club" class="heroimage">
-        </div>
+        </div> -->
         <main class="contenido">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO EL LISTADO DE PRODUCTOS A FACTURAR Y EL TOTAL - CLASS=CONTENIDO</p>
-            <h1>SU COMPRA</h1>
-            <br><br>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis rutrum gravida. Aliquam
-                vel
-                nunc sit amet nibh aliquam sollicitudin eu vitae elit. Duis varius turpis est, at feugiat metus
-                blandit
-                non. Mauris est nunc, ullamcorper nec egestas at, faucibus ac ex. Cras gravida ut odio eget
-                vulputate.
-                <br><br>
+            <div id="contenidoCarrito">
+                <div id="carrito-vacio">
+                    <p>Ups! El carrito está vacío</p>
+                    <a href="./tienda.html" id="link-tienda">elige algunos productos</a>
+                </div>
+                <section id="cart-container"></section>
+                <section id="totales">
+                    <p>Total unidades: <span id="cantidad">0</span></p>
+                    <p>Total precio: $<span id="precio">0</span></p>
+                    <button>Comprar</button>
+                    <button id="reiniciar">Reiniciar</button>
+                </section>
+            </div>
 
-                Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper
-                nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor
-                tortor, sagittis ac mattis sed, ullamcorper et orci. Pellentesque quis mollis massa. Donec lacinia
-                turpis sapien, eu tincidunt dui rutrum elementum. Maecenas dictum et metus eget aliquam.
-            </p>
         </main>
         <aside class="sidebar">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO EL LISTADO DE PRODUCTOS A FACTURAR Y EL TOTAL - CLASS=CONTENIDO</p>
-            <h1>A FACTURAR</h1>
-            <img src="./imagenes/f581acf4e3f6cfc34a0dd1b3a334a9db.jpg" alt="Bienvenido a Sara Winery Club" class="widget">
+            <h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>
+            <div id="ofertas-sidebar"></div>
         </aside>
         <aside class="sidebar-2">
-            <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO LA SELECCION DE FORMAS DE PAGO - CLASS=CONTENIDO-2</p>
-            <h1>FORMAS DE PAGO</h1>
-            <img src="./imagenes/b825a588d1b9b5f9151155749872da15.jpg" alt="Entrar a Saraza Wine Club" class="widget">
+            <h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>
+            <div id="ofertas-sidebar2"></div>
         </aside>
         <div class="widget-2">
             <p>ACA PONER LO QUE SE QUIERA POR EJEMPLO CARUSEL DE PRODUCTOS RELACIONADOS - CLASS=WIDGET-2</p>
@@ -63,7 +58,9 @@
             <h3>Footer</h3>
         </footer>
         <script src="./js/menu.js"></script>
-        <script src="./js/index.js"></script>
+        <!-- <script src="./js/index.js"></script> -->
+        <script src="./js/cartService.js" defer></script>
+        <script src="./js/cart.js" defer></script>
     </div>
 
 </body>
