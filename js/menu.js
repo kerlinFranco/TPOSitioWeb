@@ -1,8 +1,8 @@
 let cad = `
-<img src="./imagenes/SarazaWineClubLogo.jpeg" alt="Logo Saraza Wine Club" class="isotipo">
+<img src="./imagenes/isologotipo-saraza-wine-club-redux.png" alt="Logo Saraza Wine Club" class="isotipo">
 <br>
         <menunav>
-            <b class="logotipo">Saraza Wine Club</b>
+            
             <a class="navheader" href="index.html">Inicio</a>
             <a class="navheader" href="tienda-fabian.html">Tienda</a>
             <a class="navheader" href="carrito-fabian.html">Carrito</a>
@@ -11,7 +11,7 @@ let cad = `
         </menunav> `
 
 document.querySelector("header").innerHTML = cad
-
+//<b class="logotipo">Saraza Wine Club</b> se quito temporalmente para ver como queda 
 
 cad = `
         <b>© 2023 Sitio Desarrollado para Codo a Codo por Eduardo Argento - Franco Kerlin - Ximena Melendez - Ivan Reartes</b>
