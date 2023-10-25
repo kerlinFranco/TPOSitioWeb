@@ -179,7 +179,70 @@ body {
         "footer footer footer footer";
 }
 
+/* Inicio carrito */
+.mensajeCarrito{
+    background-color:rgb(151, 46, 90) ;
+    border-radius: 35px;
+    margin: 5%;
+    padding: 1%;
+    color: #fff;
+    
+}
+#link-tienda{
+    text-decoration: none;
+    color: #fcfcfc;
+    font-size: 18px;
+}
+#link-tienda:hover{
+    font-size: 30px;
+
+}
+.tarjetaCarrito{
+    padding:10px ;
+    margin: 5px;
+    border-radius:30px ;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imgCarrito {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+.descripCarrito {
+  
+    flex: 1; /* El contenido ocupa todo el espacio disponible */
+}
+.precioCarrito{
+    padding:10px ;
+    margin: 5px;
+    font-size: 20px;
+}
+#totales{
+    font-size: 20px;
+}
+.botonesCarrito{
+    color: #ddd;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    background-color:rgb(151, 46, 90) ;
+    border-radius: 20px;
+    
+}
+.botonesCarrito:hover{
+    font-size:25px ;
+    background-color:rgb(179, 83, 155);
+    
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fin carrito  */
+
 /*Inicio tienda*/
+
 
 .tarjeta-producto{
     border: 1px solid;
