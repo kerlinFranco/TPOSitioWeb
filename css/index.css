@@ -115,7 +115,7 @@ body {
     /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
     /*width: min(95%, 70rem);*/
     /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr,1fr;
     margin-inline: auto;
 
 }
@@ -185,17 +185,20 @@ body {
     
 }
 .tarjeta-producto{
-    border: 1px solid #ccc;
+    border: 1px solid;
     margin: 10px;
-    padding: 10px;
+    padding: 0px;
     width: 200px; /* Ajusta el ancho según tus necesidades */
     display: inline-block;
+    
   
 }
 
 .card{
     /*Esto es de la img*/
     width: 97%;
+    object-fit: contain;
+
 }
 .descripTienda{
     display:none;
@@ -204,7 +207,7 @@ body {
 
 .tarjeta-producto:hover{
    width: 85%;
-   
+  
     .descripTienda{
         display:block;
         
@@ -220,15 +223,20 @@ body {
     padding: 10px;
 }
 .oferta-card,.oferta-card2{
-    border:#412027 solid ;
+    border:#e9e1d8 solid ;
+    border-radius: 30px;
+    
     /* background-color: rgb(146, 65, 99); */
     margin-top: 20px;
     padding: 10px;
     /* background-color: #412027; */
 }
-
+.nombreOferta{
+   /* font-size: 60px; */
+}
 .precioDes{
-    border: solid ;
+    border: solid #e9e1d8;
+    border-radius: 30px;
     background-color: rgb(179, 83, 155);
 }
 .descrip{
@@ -236,10 +244,11 @@ body {
     display: none;
 }
 .precios{
+    font-size: 25px;
     display:block;
 }
 .precioClub{
-    font-size: 25px;
+    
     color: #ffffff;
 }
 .oferta-card:hover {
@@ -261,6 +270,19 @@ body {
     }
 }
 /*Fin Oferta*/
+.contenedor#login-registro {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "header header header header"
+    "widget-1 widget-1 widget-1 widget-1"
+    "sidebar contenido contenido sidebar-2"
+    "sidebar contenido contenido sidebar-2"
+    "sidebar contenido contenido sidebar-2"
+    "widget-2 widget-2 widget-2 widget-2"
+    "widget-2 widget-2 widget-2 widget-2"
+    "footer footer footer footer";
+}
+
 #parrafoHero{
     background-color: white;
     padding: 30px;
@@ -531,7 +553,6 @@ display: block;
     .contenedor#carrito {
         grid-template-areas:
             "header header header header"
-            "widget-1 widget-1 widget-1 widget-1"
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
             "sidebar sidebar sidebar-2 sidebar-2"
@@ -540,6 +561,7 @@ display: block;
     }
 
     .contenedor#login-registro {
+<<<<<<< HEAD
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "header header header header"
@@ -549,6 +571,17 @@ display: block;
             "sidebar sidebar sidebar-2 sidebar-2"
             "sidebar sidebar sidebar-2 sidebar-2"
             "footer footer footer footer";
+=======
+        grid-template-columns: 1fr,1fr,1fr,1fr;
+        
+        grid-template-areas:
+        "header header header header"
+        "widget-1 widget-1 widget-1 widget-1"
+        "contenido contenido contenido contenido"
+        "contenido contenido contenido contenido"
+        "sidebar sidebar sidebar-2 sidebar-2"
+        "footer footer footer footer";
+>>>>>>> Franco
     }
 
     
@@ -556,9 +589,11 @@ display: block;
 
 
     .contenedorFormLoginRegistro form{
-        left:-5%;
+        left:-7%;
         width: 67%;   
     }
+    
+
 
     .contenedor#quienes-somos {
         grid-template-areas:
@@ -644,12 +679,16 @@ display: block;
 
 .contenedor .contenido {
     grid-area: contenido;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     display: inline-flex;
     min-width: 270px;
+=======
+   
+>>>>>>> Franco
 }
 
 .contenedor .contenido-2 {
