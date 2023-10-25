@@ -243,32 +243,57 @@ body {
 
 /*Inicio tienda*/
 
-
+.tituloTienda{
+    background-color:rgb(151, 46, 90);
+    margin: 40px;
+    padding: 40px;
+    color:#fff; 
+    border-radius: 30px;
+}
 .tarjeta-producto{
-    border: 1px solid;
-    margin: 10px;
-    padding: 0px;
-    width: 200px; /* Ajusta el ancho según tus necesidades */
-    display: inline-block;
     
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
   
 }
 
 .card{
     /*Esto es de la img*/
-    width: 97%;
-    object-fit: contain;
+    max-width: 50%;
+    margin-right: 1%;
 
 }
-.descripTienda{
+.descripTienda,.stock{
+    margin: 10px;
     display:none;
     
 }
-
+#bComprar{
+    color: #ddd;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    background-color:rgb(151, 46, 90) ;
+    border-radius: 20px;
+}
+#bComprar:hover{
+    font-size:25px ;
+    background-color:rgb(179, 83, 155);
+    
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+}
+.precio{
+    margin:10px;
+    font-size: 20px;
+}
 .tarjeta-producto:hover{
-   width: 85%;
+   width: 100%;
   
-    .descripTienda{
+    .descripTienda,.stock{
         display:block;
         
     }

@@ -7,11 +7,12 @@ function crearTarjetasProductosInicio(productos){
     nuevoVino.classList = "tarjeta-producto"
     nuevoVino.innerHTML = `
     <img src="imagenes/bodega/vino${producto.id}.jpg" alt="Vinos" class="card">
+    
+    <span nombreDesc>
     <h3>${producto.nombre}</h3>
-    <span class="descripTienda">
-     <p>${producto.descripcion}</p>
+     <p class="descripTienda">${producto.descripcion}</p>
       <p class="stock">${producto.stock}</p>
-    <button>Agregar al carrito</button>
+    <button class="descripTienda" id="bComprar">Agregar al carrito</button>
     </span>
     <p class="precio">$${producto.precio}</p><br>
     
