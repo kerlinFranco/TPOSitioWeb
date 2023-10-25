@@ -567,6 +567,7 @@ display: block;
             "footer footer footer footer";
             
     }
+    
     .contenedorFormLoginRegistro form{
         left:-7%;
         width: 100%;   
@@ -600,12 +601,14 @@ display: block;
     .contenedor#login-registro {
         
         grid-template-areas:
-            "header header header header"
-            "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar sidebar"
-            "sidebar sidebar sidebar sidebar"
-            "footer footer footer footer";
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "contenido contenido contenido contenido"
+        "sidebar sidebar sidebar sidebar"
+        "sidebar sidebar sidebar sidebar"
+        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+        "footer footer footer footer";
     }
     .cajaAtras div {
         margin-top: -10%;
@@ -651,21 +654,24 @@ display: block;
             "header header header header"
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar-2 sidebar-2"
-            "sidebar sidebar sidebar-2 sidebar-2"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
             "footer footer footer footer";
     }
 
     .contenedor#login-registro {
        
         grid-template-areas:
-            "header header header header"
-            "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar sidebar"
-            "sidebar sidebar sidebar sidebar"
-            "footer footer footer footer";
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "contenido contenido contenido contenido"
+        "sidebar sidebar sidebar sidebar"
+        "sidebar sidebar sidebar sidebar"
+        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+        "footer footer footer footer";
     }
     .isotipo{
         width: 90%;
@@ -714,13 +720,14 @@ display: block;
 .contenedor#login-registro {
        
     grid-template-areas:
-        "header header header header"
-        "widget-1 widget-1 widget-1 widget-1"
-        "contenido contenido contenido contenido"
-        "contenido contenido contenido contenido"
-        "sidebar sidebar sidebar sidebar"
-        "sidebar sidebar sidebar sidebar"
-        "footer footer footer footer";
+    "header header header header"
+    "contenido contenido contenido contenido"
+    "contenido contenido contenido contenido"
+    "sidebar sidebar sidebar sidebar"
+    "sidebar sidebar sidebar sidebar"
+    "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+    "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+    "footer footer footer footer";
 }
 .cajaAtras div {
    align-items: center;

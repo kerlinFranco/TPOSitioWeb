@@ -2,7 +2,7 @@
 // css del registro y login
 document.getElementById("bRegistrar").addEventListener("click",registro);
 document.getElementById("bIniciarSession").addEventListener("click",login);
-// window.addEventListener("resize",anchoPag);
+window.addEventListener("resize",anchoPag);
 
 let cajaAtras=document.querySelector(".cajaAtras");
 let cajaAtrasDiv=document.querySelector(".cajaAtras div");
@@ -12,16 +12,23 @@ let formularioRegistro=document.querySelector(".formularioRegistro");
 let cajaAtrasLogin=document.querySelector(".cajaLogin");
 let cajaAtrasRegistro=document.querySelector(".cajaRegistro");
 
-// function anchoPag(){
+function anchoPag(){
  
-//     if(window.innerWidth>768){
+    if(window.innerWidth>560 && window.innerWidth<1100){
+        const elementoAEliminar = document.getElementById("ContenedorSidebar2");
+        elementoAEliminar.remove();
+    }else{
+        const sidebar2=document.getElementById("ContenedorSidebar2");
+        const sidebar = document.createElement('div');
+                
+                sidebar.classList.add("sidebar-2")
+                sidebar.id="ofertas-sidebar2"
+                sidebar.innerHTML = `<h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>`
+        sidebar2.appendChild(sidebar);
+    }
 
-//     }else{
-
-//     }
-
-// }
-// anchoPag();
+}
+anchoPag();
 
 function registro(){
     formularioRegistro.style.display="block";
