@@ -220,15 +220,20 @@ body {
     padding: 10px;
 }
 .oferta-card,.oferta-card2{
-    border:#412027 solid ;
+    border:#e9e1d8 solid ;
+    border-radius: 30px;
+    
     /* background-color: rgb(146, 65, 99); */
     margin-top: 20px;
     padding: 10px;
     /* background-color: #412027; */
 }
-
+.nombreOferta{
+   font-size: 60px;
+}
 .precioDes{
-    border: solid ;
+    border: solid #e9e1d8;
+    border-radius: 30px;
     background-color: rgb(179, 83, 155);
 }
 .descrip{
@@ -236,10 +241,11 @@ body {
     display: none;
 }
 .precios{
+    font-size: 25px;
     display:block;
 }
 .precioClub{
-    font-size: 25px;
+    
     color: #ffffff;
 }
 .oferta-card:hover {
@@ -638,16 +644,7 @@ body {
 
 .contenedor .contenido {
     grid-area: contenido;
-<<<<<<< HEAD
    
-=======
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    display: inline-flex;
-    min-width: 270px;
->>>>>>> main
 }
 
 .contenedor .contenido-2 {

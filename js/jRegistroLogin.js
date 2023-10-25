@@ -61,7 +61,7 @@ fetch('vinosLocal.json')
                     const ofertaCard = document.createElement('div');
                 ofertaCard.classList.add('oferta-card');
                 ofertaCard.innerHTML = `
-                    <h3>${oferta.nombre}</h3>
+                    <h2 class="nombreOferta">${oferta.nombre}</h2>
                     <span class="imgOfertaClub">
                     <img src="${oferta.fotoTarjeta}" alt="imgOfertaClub"
                     class="widget" >

@@ -45,7 +45,7 @@ function crearTarjetasProductosCarrito() {
   }
   revisarMensajeVacio();
   actualizarTotales();
-  actualizarNumeroCarrito();
+  // actualizarNumeroCarrito();
 }
 
 crearTarjetasProductosCarrito();
