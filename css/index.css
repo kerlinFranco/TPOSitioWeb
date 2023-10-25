@@ -7,6 +7,7 @@
     align-self: flex-start;
     width: 400px;
     height: 100px;
+    
     /*   display: inline-block; */
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
 }
@@ -16,7 +17,7 @@
     width: 50px;
     height: 80px;
     margin: 10px;
-    background-color: rgba(224, 224, 224, 0);
+    background-color: rgba(207, 6, 6, 0);
     text-decoration: none;
     color: rgb(95, 93, 93);
     border: 0px solid rgb(241, 241, 234);
@@ -179,9 +180,7 @@ body {
 }
 
 /*Inicio tienda*/
-.productos{
-    
-}
+
 .tarjeta-producto{
     border: 1px solid;
     margin: 10px;
@@ -229,9 +228,7 @@ body {
     padding: 10px;
     /* background-color: #412027; */
 }
-.nombreOferta{
-   /* font-size: 60px; */
-}
+
 .precioDes{
     border: solid #e9e1d8;
     border-radius: 30px;
@@ -271,13 +268,10 @@ body {
 .contenedor#login-registro {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
-    "header header header header"
-    "widget-1 widget-1 widget-1 widget-1"
+    "header header header header"   
     "sidebar contenido contenido sidebar-2"
     "sidebar contenido contenido sidebar-2"
     "sidebar contenido contenido sidebar-2"
-    "widget-2 widget-2 widget-2 widget-2"
-    "widget-2 widget-2 widget-2 widget-2"
     "footer footer footer footer";
 }
 
@@ -372,6 +366,7 @@ body {
     position: relative;
     top: -220px;
     left: 10%;
+    padding:5px ;
     
 }
 
@@ -436,14 +431,11 @@ display: block;
         grid-template-columns: 20% 20% 30% 30%;
         grid-template-areas:
             "header header header header"
-            "widget-1 widget-1 widget-1 widget-1"
             "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
             "contenido contenido contenido sidebar"
-            "contenido contenido contenido sidebar-2"
-            "contenido contenido contenido sidebar-2"
-            "widget-2 widget-2 widget-2 widget-2"
             "footer footer footer footer";
     }
+
     
 }
 @media screen and (max-width: 768px) {
@@ -483,22 +475,21 @@ display: block;
     }
 
     .contenedor#login-registro {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 10% 40% 40% 10%;
         grid-template-areas:
             "header header header header"
-            "widget-1 widget-1 widget-1 widget-1"
-            "contenido contenido contenido contenido" /*contenido contenido sidebar sidebar;;
-        "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar-2 sidebar-2 "
-            "footer footer footer footer"; */;
+            "contenido contenido contenido contenido" 
+            "sidebar sidebar sidebar sidebar"
+            "footer footer footer footer";
+            
     }
+    .contenedorFormLoginRegistro form{
+        left:-7%;
+        width: 100%;   
+    }
+    
     /*registro*/
     
-    .cajaAtras{
-        max-width: 500px;
-    }
     
     .contenedor#quienes-somos {
         grid-template-areas:
@@ -520,6 +511,29 @@ display: block;
         margin: 5px;
         /* Reduce el margen para un espaciado más compacto */
     }
+}
+@media screen and (max-width: 560px) {
+    .contenedor#login-registro {
+        
+        grid-template-areas:
+            "header header header header"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
+            "footer footer footer footer";
+    }
+    .cajaAtras div {
+        margin-top: -10%;
+        margin-left: -6%;
+      
+    }
+    .contenedorFormLoginRegistro form{
+        left:-7%;
+        width: 95%;   
+    }
+    
+
 }
 
 
@@ -559,28 +573,37 @@ display: block;
     }
 
     .contenedor#login-registro {
-        grid-template-columns: repeat(4, 1fr);
+       
         grid-template-areas:
             "header header header header"
             "widget-1 widget-1 widget-1 widget-1"
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
-            "sidebar sidebar sidebar-2 sidebar-2"
-            "sidebar sidebar sidebar-2 sidebar-2"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
             "footer footer footer footer";
     }
-
-    
-
-
+    .isotipo{
+        width: 90%;
+    }
+    .cajaAtras div {
+      
+       left:10%;
+       
+      
+    }
 
     .contenedorFormLoginRegistro form{
-        left:-7%;
-        width: 67%;   
+       margin-left: 5%;
+        width: 100%;
+   
+        padding-top: 1px;
+        
+        
     }
     
 
-
+    
     .contenedor#quienes-somos {
         grid-template-areas:
             "header header header header"
@@ -599,9 +622,36 @@ display: block;
         margin: 5px;
         /* Reduce el margen para un espaciado más compacto */
     }
+    
 }
 
-
+@media screen and (max-width: 400px) {
+.contenedor#login-registro {
+       
+    grid-template-areas:
+        "header header header header"
+        "widget-1 widget-1 widget-1 widget-1"
+        "contenido contenido contenido contenido"
+        "contenido contenido contenido contenido"
+        "sidebar sidebar sidebar sidebar"
+        "sidebar sidebar sidebar sidebar"
+        "footer footer footer footer";
+}
+.cajaAtras div {
+   align-items: center;
+   left:3%;
+   padding: auto;
+  
+}
+.contenedorFormLoginRegistro form{
+    left: -9%;
+     width: 65%;
+     padding: 1fr;
+     padding-top: 1px;
+     
+     
+ }
+}
 
 
 
