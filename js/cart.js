@@ -11,20 +11,22 @@ function crearTarjetasProductosCarrito() {
   if (productos && productos.length > 0) {
     productos.forEach((producto) => {
       const nuevoVino = document.createElement("div");
-      nuevoVino.classList = "tarjeta-producto";
+      nuevoVino.classList = "tarjetaCarrito";
       nuevoVino.innerHTML = `
-    <img src="imagenes/bodega/vino${producto.id}.jpg" alt="Vinos" class="card">
+    <img src="imagenes/bodega/vino${producto.id}.jpg" alt="Vinos" class="imgCarrito">
     <h3>${producto.nombre}</h3>
-    <span class="descripTienda">
-    <p>${producto.descripcion}</p>
-    </span>
-    <span>$${producto.precio}</span>
+    <span class="descripcarrito">
+    
+    <span class="precioCarrito">$${producto.precio}</span>
+    
     <div>
     <button>-</button>
     <span class="cantidad">${producto.cantidad}</span>
     <button>+</button>
     </div>
+    </span>
     `;
+    //<p>${producto.descripcion}</p>
       contenedorTarjetas.appendChild(nuevoVino);
       nuevoVino
         .getElementsByTagName("button")[0]
