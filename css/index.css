@@ -6,8 +6,8 @@
 .isotipo {
     align-self: flex-start;
     width: 400px;
-    height: 100px;
-    
+    height: 125px;
+
     /*   display: inline-block; */
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
 }
@@ -30,10 +30,10 @@
     /*-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);*/
     text-shadow:
-    -1px -1px 0 #ffffff,  
-     1px -1px 0 #ffffff,
-     -1px 1px 0 #ffffff,
-      1px 1px 0 #ffffff;
+        -1px -1px 0 #ffffff,
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
 }
 
 /* Estilos base para las tarjetas de los modulos ofertaClub y destacado */
@@ -114,7 +114,7 @@ body {
     /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
     /*width: min(95%, 70rem);*/
     /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: 1fr, 1fr, 1fr,1fr;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
     margin-inline: auto;
 
 }
@@ -180,62 +180,72 @@ body {
 }
 
 /* Inicio carrito */
-.mensajeCarrito{
-    background-color:rgb(151, 46, 90) ;
+.mensajeCarrito {
+    background-color: rgb(151, 46, 90);
     border-radius: 35px;
     margin: 5%;
     padding: 1%;
     color: #fff;
-    
+
 }
-#link-tienda{
+
+#link-tienda {
     text-decoration: none;
     color: #fcfcfc;
     font-size: 18px;
 }
-#link-tienda:hover{
+
+#link-tienda:hover {
     font-size: 30px;
 
 }
-.tarjetaCarrito{
-    padding:10px ;
+
+.tarjetaCarrito {
+    padding: 10px;
     margin: 5px;
-    border-radius:30px ;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .imgCarrito {
-    max-width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
-    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+    max-width: 100px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 20px;
+    /* Espacio entre la imagen y el contenido */
 }
 
 .descripCarrito {
-  
-    flex: 1; /* El contenido ocupa todo el espacio disponible */
+
+    flex: 1;
+    /* El contenido ocupa todo el espacio disponible */
 }
-.precioCarrito{
-    padding:10px ;
+
+.precioCarrito {
+    padding: 10px;
     margin: 5px;
     font-size: 20px;
 }
-#totales{
+
+#totales {
     font-size: 20px;
 }
-.botonesCarrito{
+
+.botonesCarrito {
     color: #ddd;
     padding: 10px;
     margin: 15px;
     font-size: 20px;
-    background-color:rgb(151, 46, 90) ;
+    background-color: rgb(151, 46, 90);
     border-radius: 20px;
-    
+
 }
-.botonesCarrito:hover{
-    font-size:25px ;
-    background-color:rgb(179, 83, 155);
-    
+
+.botonesCarrito:hover {
+    font-size: 25px;
+    background-color: rgb(179, 83, 155);
+
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -243,127 +253,147 @@ body {
 
 /*Inicio tienda*/
 
-.tituloTienda{
-    background-color:rgb(151, 46, 90);
+.tituloTienda {
+    background-color: rgb(151, 46, 90);
     margin: 40px;
     padding: 40px;
-    color:#fff; 
+    color: #fff;
     border-radius: 30px;
 }
-.tarjeta-producto{
-    
+
+.tarjeta-producto {
+
     margin: 10px;
     padding: 10px;
     width: 100%;
     display: flex;
     align-items: center;
     box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
-  
+
 }
 
-.card{
+.card {
     /*Esto es de la img*/
     max-width: 50%;
     margin-right: 1%;
 
 }
-.descripTienda,.stock{
+
+.descripTienda,
+.stock {
     margin: 10px;
-    display:none;
-    
+    display: none;
+
 }
-#bComprar{
+
+#bComprar {
     color: #ddd;
     padding: 10px;
     margin: 15px;
     font-size: 20px;
-    background-color:rgb(151, 46, 90) ;
+    background-color: rgb(151, 46, 90);
     border-radius: 20px;
 }
-#bComprar:hover{
-    font-size:25px ;
-    background-color:rgb(179, 83, 155);
-    
+
+#bComprar:hover {
+    font-size: 25px;
+    background-color: rgb(179, 83, 155);
+
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
 }
-.precio{
-    margin:10px;
+
+.precio {
+    margin: 10px;
     font-size: 20px;
 }
-.tarjeta-producto:hover{
-   width: 100%;
-  
-    .descripTienda,.stock{
-        display:block;
-        
+
+.tarjeta-producto:hover {
+    width: 100%;
+
+    .descripTienda,
+    .stock {
+        display: block;
+
     }
 
 }
+
 /*Fin tienda*/
 
 /* Inicio Login Registro */
 /*Oferta*/
-#ofertas-sidebar,#ofertas-sidebar2{
+#ofertas-sidebar,
+#ofertas-sidebar2 {
     background-color: #fff;
     padding: 10px;
 }
-.oferta-card,.oferta-card2{
-    border:#e9e1d8 solid ;
+
+.oferta-card,
+.oferta-card2 {
+    border: #e9e1d8 solid;
     border-radius: 30px;
-    
+
     /* background-color: rgb(146, 65, 99); */
     margin-top: 20px;
     padding: 10px;
     /* background-color: #412027; */
 }
 
-.precioDes{
+.precioDes {
     border: solid #e9e1d8;
     border-radius: 30px;
     background-color: rgb(179, 83, 155);
 }
-.descrip{
-   padding: 5px;
+
+.descrip {
+    padding: 5px;
     display: none;
 }
-.precios{
+
+.precios {
     font-size: 25px;
-    display:block;
+    display: block;
 }
-.precioClub{
-    
+
+.precioClub {
+
     color: #ffffff;
 }
+
 .oferta-card:hover {
-    
-    .descrip{
-        display:block;
+
+    .descrip {
+        display: block;
     }
-    .precios{
+
+    .precios {
         display: none;
     }
 }
+
 .oferta-card2:hover {
-    
-    .descrip{
-        display:block;
+
+    .descrip {
+        display: block;
     }
-    .precios{
+
+    .precios {
         display: none;
     }
 }
+
 /*Fin Oferta*/
 .contenedor#login-registro {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
-    "header header header header"   
-    "sidebar contenido contenido sidebar-2"
-    "sidebar contenido contenido sidebar-2"
-    "sidebar contenido contenido sidebar-2"
-    "footer footer footer footer";
+        "header header header header"
+        "sidebar contenido contenido sidebar-2"
+        "sidebar contenido contenido sidebar-2"
+        "sidebar contenido contenido sidebar-2"
+        "footer footer footer footer";
 }
 
-#parrafoHero{
+#parrafoHero {
     background-color: white;
     padding: 30px;
 
@@ -377,7 +407,7 @@ body {
 }
 
 .contenedorLoginRegistro {
-    
+
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -394,7 +424,7 @@ body {
     justify-content: center;
     /* backdrop-filter: blur(10px); */
     /* background-color:rgba(29, 29, 28, 0.5); */
-    background:linear-gradient(rgb(26, 3, 8), rgb(151, 46, 90)) ;
+    background: linear-gradient(rgb(26, 3, 8), rgb(151, 46, 90));
     border-radius: 15px;
 }
 
@@ -454,8 +484,8 @@ body {
     position: relative;
     top: -220px;
     left: 10%;
-    padding:5px ;
-    
+    padding: 5px;
+
 }
 
 .contenedorFormLoginRegistro form {
@@ -493,13 +523,14 @@ body {
     cursor: pointer;
     outline: none;
 }
-.formularioLogin{
-    
-/* margin: 10px; */
-    
-opacity: 1;
-    
-display: block;
+
+.formularioLogin {
+
+    /* margin: 10px; */
+
+    opacity: 1;
+
+    display: block;
 }
 
 .formularioRegistro {
@@ -526,28 +557,32 @@ display: block;
    
     
 }
+
 @media screen and (max-width: 900px) {
     .contenedor#login-registro {
-        
+
         grid-template-areas:
             "header header header header"
             "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
             "contenido contenido contenido sidebar-2"
             "footer footer footer footer";
     }
+
     .cajaAtras div {
         margin-top: -10%;
         margin-left: -4%;
-      
+
     }
-    .contenedorFormLoginRegistro form{
-        left:-7%;
-        width: 100%;   
+
+    .contenedorFormLoginRegistro form {
+        left: -7%;
+        width: 100%;
     }
     
 
-    
+
 }
+
 @media screen and (max-width: 768px) {
     .contenedor#index {
         grid-template-areas:
@@ -591,17 +626,17 @@ display: block;
             "contenido contenido contenido contenido" 
             "sidebar sidebar sidebar-2 sidebar-2"
             "footer footer footer footer";
-            
+
     }
-    
-    .contenedorFormLoginRegistro form{
-        left:-7%;
-        width: 100%;   
+
+    .contenedorFormLoginRegistro form {
+        left: -7%;
+        width: 100%;
     }
-    
+
     /*registro*/
-    
-    
+
+
     .contenedor#quienes-somos {
         grid-template-areas:
             "header header header header"
@@ -623,29 +658,32 @@ display: block;
         /* Reduce el margen para un espaciado más compacto */
     }
 }
+
 @media screen and (max-width: 560px) {
     .contenedor#login-registro {
-        
+
         grid-template-areas:
-        "header header header header"
-        "contenido contenido contenido contenido"
-        "contenido contenido contenido contenido"
-        "sidebar sidebar sidebar sidebar"
-        "sidebar sidebar sidebar sidebar"
-        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-        "footer footer footer footer";
+            "header header header header"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer";
     }
+
     .cajaAtras div {
         margin-top: -10%;
         margin-left: -6%;
-      
+
     }
-    .contenedorFormLoginRegistro form{
-        left:-7%;
-        width: 95%;   
+
+    .contenedorFormLoginRegistro form {
+        left: -7%;
+        width: 95%;
     }
-    
+
 
 }
 
@@ -688,39 +726,41 @@ display: block;
     }
 
     .contenedor#login-registro {
-       
+
         grid-template-areas:
-        "header header header header"
-        "contenido contenido contenido contenido"
-        "contenido contenido contenido contenido"
-        "sidebar sidebar sidebar sidebar"
-        "sidebar sidebar sidebar sidebar"
-        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-        "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-        "footer footer footer footer";
+            "header header header header"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer";
     }
-    .isotipo{
+
+    .isotipo {
         width: 90%;
     }
+
     .cajaAtras div {
-      
-       left:10%;
-       
-      
+
+        left: 10%;
+
+
     }
 
-    .contenedorFormLoginRegistro form{
-       margin-left: auto;
-       margin-right: auto;
+    .contenedorFormLoginRegistro form {
+        margin-left: auto;
+        margin-right: auto;
         width: 70%;
-   
-        padding-top: 1px;
-        
-        
-    }
-    
 
-    
+        padding-top: 1px;
+
+
+    }
+
+
+
     .contenedor#quienes-somos {
         grid-template-areas:
             "header header header header"
@@ -739,36 +779,38 @@ display: block;
         margin: 5px;
         /* Reduce el margen para un espaciado más compacto */
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
-.contenedor#login-registro {
-       
-    grid-template-areas:
-    "header header header header"
-    "contenido contenido contenido contenido"
-    "contenido contenido contenido contenido"
-    "sidebar sidebar sidebar sidebar"
-    "sidebar sidebar sidebar sidebar"
-    "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-    "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-    "footer footer footer footer";
-}
-.cajaAtras div {
-   align-items: center;
-   left:3%;
-   padding: auto;
-  
-}
-.contenedorFormLoginRegistro form{
-    left: -9%;
-     width: 65%;
-     padding: 1fr;
-     padding-top: 1px;
-     
-     
- }
+    .contenedor#login-registro {
+
+        grid-template-areas:
+            "header header header header"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer";
+    }
+
+    .cajaAtras div {
+        align-items: center;
+        left: 3%;
+        padding: auto;
+
+    }
+
+    .contenedorFormLoginRegistro form {
+        left: -9%;
+        width: 65%;
+        padding: 1fr;
+        padding-top: 1px;
+
+
+    }
 }
 
 
@@ -787,8 +829,7 @@ display: block;
 
 .contenedor .contenido,
 .contenedor .sidebar,
-.contenedor .sidebar-2,
-.contenedor .footer {
+.contenedor .sidebar-2 {
     background: #fff;
     padding: 20px;
     /*  padding de los sectores */
@@ -948,7 +989,7 @@ display: block;
 
 .contenedor .widget-1 {
     grid-area: widget-1;
-    
+
 }
 
 .contenedor .widget-2 {
@@ -967,14 +1008,7 @@ display: block;
     grid-area: sidebar-login;
 }
 
-.contenedor .footer {
-    background: #ffff;
-    color: #412027;
-    align-items: center;
-    text-align: center;
-    grid-area: footer;
-    justify-content: center;
-}
+
 
 
 /* fin de Tomado de grid-4-responsive.css */
@@ -984,7 +1018,7 @@ display: block;
 
 h1 {
     text-align: center;
-    
+
 }
 
 .navheader {
@@ -1033,3 +1067,71 @@ nav a {
     background-color: #412027;
     /* Color para el HOVER,  buscar otro */
 }
+
+
+.social {
+    align-self: flex-start;
+    width: 300px;
+ /*   height: 125px;*/
+
+    /*   display: inline-block; */
+    /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
+}
+
+
+.navfooter {
+    margin: 10px;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+    border: 1px solid rgb(241, 241, 234);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
+}
+
+.contenedor>div,
+.contenedor .footer {
+    background: #fff;
+    padding: 20px;
+    /*  padding de los sectores */
+    border-radius: 10 px;
+    /* elimine el borde redondeado */
+}
+
+.contenedor .footer {
+    /*background-image: url('../imagenes/wineHero.jpg');*/
+    /* Imagen de background */
+    /*color: #5f5f5f; */
+    grid-area: footer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffff;
+    color: #412027;
+
+    background-size: 100% 300px;
+    /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    /*color: #fff;*/
+    /* Color del texto dentro del encabezado */
+    text-align: center;
+    /* Alinea el texto al centro */
+    padding: 20px;
+    /* Espacio interno para el contenido */
+
+    background: #fff;
+    padding: 20px;
+    /*  padding de los sectores */
+    border-radius: 0px;
+    /* elimine el borde redondeado */
+    /*    display: inline-block; */
+
+}
+
+
