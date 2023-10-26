@@ -178,6 +178,13 @@ body {
         "widget-2 widget-2 widget-2 widget-2"
         "footer footer footer footer";
 }
+/* inicio quines */
+.logoQuienes{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+/* fin quienes */
 
 /* Inicio carrito */
 .mensajeCarrito{
