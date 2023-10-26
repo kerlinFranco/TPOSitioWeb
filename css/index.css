@@ -520,10 +520,13 @@ display: block;
         grid-template-areas:
             "header header header header"
             "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
-            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar-2"
             "footer footer footer footer";
     }
-
+    .contenedorLoginRegistro {
+       top: -20%;
+    
+    }
     
 }
 @media screen and (max-width: 900px) {
@@ -532,7 +535,7 @@ display: block;
         grid-template-areas:
             "header header header header"
             "contenido contenido contenido sidebar" /*contenido contenido sidebar sidebar */
-            "contenido contenido contenido sidebar"
+            "contenido contenido contenido sidebar-2"
             "footer footer footer footer";
     }
     .cajaAtras div {
@@ -544,6 +547,10 @@ display: block;
         left:-7%;
         width: 100%;   
     }
+    .contenedorLoginRegistro {
+        top: -20%;
+     
+     }
 
     
 }
@@ -588,7 +595,7 @@ display: block;
         grid-template-areas:
             "header header header header"
             "contenido contenido contenido contenido" 
-            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar-2 sidebar-2"
             "footer footer footer footer";
             
     }
