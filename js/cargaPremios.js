@@ -66,15 +66,13 @@ window.addEventListener("scroll", animateOnScroll);
                 card.classList.add("tarjeta-premios");
                 card.innerHTML = `
                     <img src="${premio.imagen_persona}" alt="${premio.nombre}">
-                    <p>Valoración: ${premio.valoracion}</p>    
-                    <h3>${premio.nombre}</h3>
-                    <p>Asociación: ${premio.asociacion}</p>
-                    <p>Cargo Directivo: ${premio.cargo_directivo}</p>
+                    <p>"${premio.valoracion}"</p>    
+                    <h4>${premio.nombre}</h4>
+                    <p>${premio.cargo_directivo}</p>
+                    <p>${premio.asociacion}</p>
                     <img src="${premio.imagen_premio}" alt="${premio.nombre_premio}">
                     <p>Premio: ${premio.nombre_premio}</p>
-                    
-
-                `;
+                    `;
                 cardContainer.appendChild(card);
             });
         }
