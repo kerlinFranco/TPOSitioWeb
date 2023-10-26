@@ -1,5 +1,5 @@
 * {
-    /*   margin: 0;*/
+    /* margin: 0; */
     padding: 0;
 }
 
@@ -974,12 +974,12 @@ body {
 .contenedor .testimonios {
     background: #ffffff;
     color: #412027;
-    /*   height: 100px; */
+    /* height: 100px; */
     /* text-align: center; */
     display: flex;
     /*align-items: center;*/
     justify-content: center;
-    display: inline-block;
+    /* display: inline-block; */
     height: auto;
     /* align-items: stretch; */
     /* grid-auto-rows: 2rem; */
@@ -1144,10 +1144,18 @@ nav a {
     /* gap: 20px; */ /* Espacio entre las tarjetas */
 }
 
-.tarjeta {
-    background-color: #f0f0f0; /* Color de fondo de las tarjetas (personalízalo) */
-    padding: 20px;
+.tarjeta-premios {
     border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    /* display: inline-block; */
+    /*width: calc(50% - 20px);*/
+    /* Tarjetas ocupan el 50% del ancho de su contenedor */
+    /*box-sizing: border-box;*/
+    /*max-width: 400px;*/
+    /* Ancho máximo de 400px para evitar que se estiren demasiado */
+    background-color: #f0f0f0; /* Color de fondo de las tarjetas (personalízalo) */
 }
 
 

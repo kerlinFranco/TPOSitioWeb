@@ -63,15 +63,17 @@ window.addEventListener("scroll", animateOnScroll);
             randomIndexes.forEach((index) => {
                 const premio = jsonData[index];
                 const card = document.createElement("div");
-                card.classList.add("tarjeta");
+                card.classList.add("tarjeta-premios");
                 card.innerHTML = `
+                    <img src="${premio.imagen_persona}" alt="${premio.nombre}">
+                    <p>Valoración: ${premio.valoracion}</p>    
                     <h3>${premio.nombre}</h3>
                     <p>Asociación: ${premio.asociacion}</p>
                     <p>Cargo Directivo: ${premio.cargo_directivo}</p>
-                    <p>Nombre del Premio: ${premio.nombre_premio}</p>
-                    <p>Valoración: ${premio.valoracion}</p>
-                    <img src="${premio.imagen_persona}" alt="${premio.nombre}">
                     <img src="${premio.imagen_premio}" alt="${premio.nombre_premio}">
+                    <p>Premio: ${premio.nombre_premio}</p>
+                    
+
                 `;
                 cardContainer.appendChild(card);
             });
