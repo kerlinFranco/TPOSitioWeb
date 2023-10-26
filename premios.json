@@ -5,8 +5,8 @@
       "cargo_directivo": "Presidente",
       "nombre_premio": "Premio Excelencia Vinícola",
       "valoracion": "Saraza Wine Club es un lugar excepcional para los amantes del vino, donde se disfruta de una amplia variedad de vinos y una experiencia única.",
-      "imagen_persona": "director1.jpg",
-      "imagen_premio": "premio1.jpg"
+      "imagen_persona": "./imagenes/director1.jpg",
+      "imagen_premio": "./imagenes/premio1.jpg"
     },
     {
       "nombre": "María Rodríguez",
@@ -14,8 +14,8 @@
       "cargo_directivo": "Vicepresidente",
       "nombre_premio": "Gran Medalla del Vino Francés",
       "valoracion": "Saraza Wine Club ofrece una selección de vinos que refleja la pasión por la enología.",
-      "imagen_persona": "directora1.jpg",
-      "imagen_premio": "premio2.jpg"
+      "imagen_persona": "./imagenes/directora1.jpg",
+      "imagen_premio": "./imagenes/premio2.jpg"
     },
     {
       "nombre": "John Smith",
@@ -23,8 +23,8 @@
       "cargo_directivo": "Tesorero",
       "nombre_premio": "Distinguished Wine Award",
       "valoracion": "Saraza Wine Club proporciona un entorno enriquecedor para los amantes del vino y una amplia gama de experiencias únicas.",
-      "imagen_persona": "director2.jpg",
-      "imagen_premio": "premio3.jpg"
+      "imagen_persona": "./imagenes/director2.jpg",
+      "imagen_premio": "./imagenes/premio3.jpg"
     },
     {
       "nombre": "Sophie Martin",
@@ -32,8 +32,8 @@
       "cargo_directivo": "Secretaria General",
       "nombre_premio": "Premio al Conocimiento Vitivinícola",
       "valoracion": "Saraza Wine Club es el lugar ideal para expandir tus conocimientos sobre vinos y disfrutar de eventos exclusivos.",
-      "imagen_persona": "directora2.jpg",
-      "imagen_premio": "premio4.jpg"
+      "imagen_persona": "./imagenes/directora2.jpg",
+      "imagen_premio": "./imagenes/premio4.jpg"
     },
     {
       "nombre": "Andrea González",
@@ -41,8 +41,8 @@
       "cargo_directivo": "Vocal",
       "nombre_premio": "Copa del Enólogo Internacional",
       "valoracion": "Saraza Wine Club brinda una experiencia única de degustación de vinos de todo el mundo y una comunidad apasionada.",
-      "imagen_persona": "directora3.jpg",
-      "imagen_premio": "premio5.jpg"
+      "imagen_persona": "./imagenes/directora3.jpg",
+      "imagen_premio": "./imagenes/premio5.jpg"
     },
     {
       "nombre": "François Dupont",
@@ -50,8 +50,8 @@
       "cargo_directivo": "Vicepresidente Ejecutivo",
       "nombre_premio": "Gran Premio de la Viticultura",
       "valoracion": "Saraza Wine Club es un refugio para los amantes del vino, con una variedad de vinos exquisitos y eventos emocionantes.",
-      "imagen_persona": "director3.jpg",
-      "imagen_premio": "premio1.jpg"
+      "imagen_persona": "./imagenes/director3.jpg",
+      "imagen_premio": "./imagenes/premio1.jpg"
     },
     {
       "nombre": "Lisa Johnson",
@@ -59,8 +59,8 @@
       "cargo_directivo": "Directora de Marketing",
       "nombre_premio": "Mejor Sommelier del Año",
       "valoracion": "Saraza Wine Club ofrece una experiencia inigualable para los amantes del vino y eventos de alta calidad.",
-      "imagen_persona": "directora4.jpg",
-      "imagen_premio": "premio2.jpg"
+      "imagen_persona": "./imagenes/directora4.jpg",
+      "imagen_premio": "./imagenes/premio2.jpg"
     },
     {
       "nombre": "Miguel Hernández",
@@ -68,8 +68,8 @@
       "cargo_directivo": "Presidente Honorario",
       "nombre_premio": "Copa del Maestro Sommelier",
       "valoracion": "Saraza Wine Club es el lugar perfecto para aprender, disfrutar y conectar con amantes del vino de todo el mundo.",
-      "imagen_persona": "director4.jpg",
-      "imagen_premio": "premio3.jpg"
+      "imagen_persona": "./imagenes/director4.jpg",
+      "imagen_premio": "./imagenes/premio3.jpg"
     },
     {
       "nombre": "Elena Petrova",
@@ -77,8 +77,8 @@
       "cargo_directivo": "Directora Ejecutiva",
       "nombre_premio": "Gran Medalla del Vino Ruso",
       "valoracion": "Saraza Wine Club es un lugar donde el arte de la degustación de vinos se combina con la pasión y la amistad.",
-      "imagen_persona": "directora5.jpg",
-      "imagen_premio": "premio4.jpg"
+      "imagen_persona": "./imagenes/directora5.jpg",
+      "imagen_premio": "./imagenes/premio4.jpg"
     },
     {
       "nombre": "Ricardo Silva",
@@ -86,8 +86,8 @@
       "cargo_directivo": "Director de Eventos",
       "nombre_premio": "Premio del Catador de México",
       "valoracion": "Saraza Wine Club ofrece una experiencia de cata excepcional y una comunidad apasionada de amantes del vino.",
-      "imagen_persona": "director5.jpg",
-      "imagen_premio": "premio5.jpg"
+      "imagen_persona": "./imagenes/director5.jpg",
+      "imagen_premio": "./imagenes/premio5.jpg"
     },
     {
       "nombre": "Hans Weber",
@@ -95,8 +95,8 @@
       "cargo_directivo": "Miembro de la Junta Directiva",
       "nombre_premio": "Copa Internacional del Vino",
       "valoracion": "Saraza Wine Club es el refugio de los amantes del vino, donde se exploran vinos excepcionales de todo el mundo.",
-      "imagen_persona": "director1.jpg",
-      "imagen_premio": "premio1.jpg"
+      "imagen_persona": "./imagenes/director1.jpg",
+      "imagen_premio": "./imagenes/premio1.jpg"
     },
     {
       "nombre": "Sophia O'Connor",
@@ -104,8 +104,8 @@
       "cargo_directivo": "Directora de Comunicaciones",
       "nombre_premio": "Premio al Mérito de la Sommellerie",
       "valoracion": "Saraza Wine Club es una experiencia única para los amantes del vino, con catas excepcionales y eventos emocionantes.",
-      "imagen_persona": "directora1.jpg",
-      "imagen_premio": "premio2.jpg"
+      "imagen_persona": "./imagenes/directora1.jpg",
+      "imagen_premio": "./imagenes/premio2.jpg"
     },
     {
       "nombre": "Lorenzo Giordano",
@@ -113,8 +113,8 @@
       "cargo_directivo": "Director de Educación",
       "nombre_premio": "Copa del Sommelier Italiano",
       "valoracion": "Saraza Wine Club es el lugar donde el conocimiento y la pasión por el vino se unen en una comunidad excepcional.",
-      "imagen_persona": "director2.jpg",
-      "imagen_premio": "premio3.jpg"
+      "imagen_persona": "./imagenes/director2.jpg",
+      "imagen_premio": "./imagenes/premio3.jpg"
     },
     {
       "nombre": "Olga Petrovna",
@@ -122,8 +122,8 @@
       "cargo_directivo": "Presidenta de Honor",
       "nombre_premio": "Gran Premio de la Sommellerie Rusa",
       "valoracion": "Saraza Wine Club ofrece una experiencia inigualable de degustación de vinos y eventos exclusivos.",
-      "imagen_persona": "directora2.jpg",
-      "imagen_premio": "premio4.jpg"
+      "imagen_persona": "./imagenes/directora2.jpg",
+      "imagen_premio": "./imagenes/premio4.jpg"
     },
     {
       "nombre": "Robert Smithson",
@@ -131,8 +131,8 @@
       "cargo_directivo": "Director de Relaciones Públicas",
       "nombre_premio": "Premio del Viticultor Californiano",
       "valoracion": "Saraza Wine Club es un lugar donde se celebra la diversidad de vinos y se fomenta la pasión vinícola.",
-      "imagen_persona": "director3.jpg",
-      "imagen_premio": "premio5.jpg"
+      "imagen_persona": "./imagenes/director3.jpg",
+      "imagen_premio": "./imagenes/premio5.jpg"
     },
     {
       "nombre": "Helena Larsen",
@@ -140,8 +140,8 @@
       "cargo_directivo": "Directora de Desarrollo",
       "nombre_premio": "Copa del Sommelier Noruego",
       "valoracion": "Saraza Wine Club es el lugar donde se explora el mundo del vino con una comunidad apasionada.",
-      "imagen_persona": "directora3.jpg",
-      "imagen_premio": "premio1.jpg"
+      "imagen_persona": "./imagenes/directora3.jpg",
+      "imagen_premio": "./imagenes/premio1.jpg"
     },
     {
       "nombre": "Nicoleta Stoica",
@@ -149,8 +149,8 @@
       "cargo_directivo": "Vocal de Eventos",
       "nombre_premio": "Premio al Sommelier Rumano",
       "valoracion": "Saraza Wine Club ofrece una experiencia de cata excepcional y eventos únicos para los amantes del vino.",
-      "imagen_persona": "directora4.jpg",
-      "imagen_premio": "premio3.jpg"
+      "imagen_persona": "./imagenes/directora4.jpg",
+      "imagen_premio": "./imagenes/premio3.jpg"
     }
   ]
   
