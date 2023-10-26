@@ -65,7 +65,7 @@ window.addEventListener("scroll", animateOnScroll);
                 const card = document.createElement("div");
                 card.classList.add("tarjeta");
                 card.innerHTML = `
-                    <h2>${premio.nombre}</h2>
+                    <h3>${premio.nombre}</h3>
                     <p>Asociación: ${premio.asociacion}</p>
                     <p>Cargo Directivo: ${premio.cargo_directivo}</p>
                     <p>Nombre del Premio: ${premio.nombre_premio}</p>
