@@ -746,14 +746,14 @@ display: block;
 .contenedor#login-registro {
        
     grid-template-areas:
-    "header header header header"
-    "contenido contenido contenido contenido"
-    "contenido contenido contenido contenido"
-    "sidebar sidebar sidebar sidebar"
-    "sidebar sidebar sidebar sidebar"
-    "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-    "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
-    "footer footer footer footer";
+            "header header header header"
+            "contenido contenido contenido contenido"
+            "contenido contenido contenido contenido"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar sidebar sidebar sidebar"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer";
 }
 .cajaAtras div {
    align-items: center;
