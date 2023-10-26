@@ -523,10 +523,7 @@ display: block;
             "contenido contenido contenido sidebar-2"
             "footer footer footer footer";
     }
-    .contenedorLoginRegistro {
-       top: -20%;
-    
-    }
+   
     
 }
 @media screen and (max-width: 900px) {
