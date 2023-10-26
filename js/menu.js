@@ -1,5 +1,5 @@
 let cad = `
-<img src="./imagenes/isologotipo-saraza-wine-club-redux2.png" alt="Logo Saraza Wine Club" class="isotipo">
+<img src="./imagenes/isologotipo-saraza-wine-club-redux.png" alt="Logo Saraza Wine Club" class="isotipo">
 <br>
         <menunav>
             
