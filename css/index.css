@@ -178,6 +178,13 @@ body {
         "widget-2 widget-2 widget-2 widget-2"
         "footer footer footer footer";
 }
+/* inicio quines */
+.logoQuienes{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+/* fin quienes */
 
 /* Inicio carrito */
 .mensajeCarrito {
@@ -231,8 +238,9 @@ body {
 #totales {
     font-size: 20px;
 }
-
-.botonesCarrito {
+.botonesCarrito{
+    outline: none;
+    border: 1px solid #fff;
     color: #ddd;
     padding: 10px;
     margin: 15px;
@@ -285,8 +293,9 @@ body {
     display: none;
 
 }
-
-#bComprar {
+#bComprar{
+    outline: none;
+    border: 1px solid #fff;
     color: #ddd;
     padding: 10px;
     margin: 15px;
@@ -783,9 +792,9 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-    .contenedor#login-registro {
-
-        grid-template-areas:
+.contenedor#login-registro {
+       
+    grid-template-areas:
             "header header header header"
             "contenido contenido contenido contenido"
             "contenido contenido contenido contenido"
@@ -794,23 +803,21 @@ body {
             "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
             "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
             "footer footer footer footer";
-    }
-
-    .cajaAtras div {
-        align-items: center;
-        left: 3%;
-        padding: auto;
-
-    }
-
-    .contenedorFormLoginRegistro form {
-        left: -9%;
-        width: 65%;
-        padding: 1fr;
-        padding-top: 1px;
-
-
-    }
+}
+.cajaAtras div {
+   align-items: center;
+   left:3%;
+   padding: auto;
+  
+}
+.contenedorFormLoginRegistro form{
+    left: -9%;
+     width: 65%;
+     padding: 1fr;
+     padding-top: 1px;
+     
+     
+ }
 }
 
 
