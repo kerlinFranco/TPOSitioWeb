@@ -1141,4 +1141,16 @@ nav a {
 
 }
 
+#contenedor-tarjeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Las tarjetas tienen un ancho mínimo de 250px y se ajustan automáticamente */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.tarjeta {
+    background-color: #f0f0f0; /* Color de fondo de las tarjetas (personalízalo) */
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
 
