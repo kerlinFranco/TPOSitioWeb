@@ -14,18 +14,18 @@ let cajaAtrasRegistro=document.querySelector(".cajaRegistro");
 
 function anchoPag(){
  
-    if(window.innerWidth>560 && window.innerWidth<1100){
-        const elementoAEliminar = document.getElementById("ContenedorSidebar2");
-        elementoAEliminar.remove();
-    }else{
-        const sidebar2=document.getElementById("ContenedorSidebar2");
-        const sidebar = document.createElement('div');
+    // if(window.innerWidth>560 && window.innerWidth<1100){
+    //     const elementoAEliminar = document.getElementById("ContenedorSidebar2");
+    //     elementoAEliminar.remove();
+    // }else{
+    //     const sidebar2=document.getElementById("ContenedorSidebar2");
+    //     const sidebar = document.createElement('div');
                 
-                sidebar.classList.add("sidebar-2")
-                sidebar.id="ofertas-sidebar2"
-                sidebar.innerHTML = `<h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>`
-        sidebar2.appendChild(sidebar);
-    }
+    //             sidebar.classList.add("sidebar-2")
+    //             sidebar.id="ofertas-sidebar2"
+    //             sidebar.innerHTML = `<h1>Descuento exclusivo para miembros de <span class="parrafo">SARAZA</span></h1>`
+    //     sidebar2.appendChild(sidebar);
+    // }
 
 }
 anchoPag();
