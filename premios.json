@@ -4,13 +4,13 @@
       "asociacion": "Asociación de Enólogos de Argentina",
       "cargo_directivo": "Presidente",
       "nombre_premio": "Premio Excelencia Vinícola",
-      "valoracion": "Saraza Wine Club es un lugar excepcional para los amantes del vino, donde se disfruta de una amplia variedad de vinos y una experiencia única.",
+      "valoracion": "Saraza Wine Club es un lugar excepcional donde se disfruta de una amplia variedad de vinos y una experiencia única.",
       "imagen_persona": "./imagenes/director1.jpg",
       "imagen_premio": "./imagenes/premio1.jpg"
     },
     {
       "nombre": "María Rodríguez",
-      "asociacion": "Federación Francesa de Enología",
+      "asociacion": "Federación Francesa de Enología y Vitivinicultura",
       "cargo_directivo": "Vicepresidente",
       "nombre_premio": "Gran Medalla del Vino Francés",
       "valoracion": "Saraza Wine Club ofrece una selección de vinos que refleja la pasión por la enología y el disfrute de los eventos sociales.",
@@ -22,14 +22,14 @@
       "asociacion": "Wine Enthusiasts of America",
       "cargo_directivo": "Tesorero",
       "nombre_premio": "Distinguished Wine Award",
-      "valoracion": "Saraza Wine Club proporciona un entorno enriquecedor para los amantes del vino y una amplia gama de experiencias únicas.",
+      "valoracion": "Saraza proporciona un entorno enriquecedor para los amantes del vino y una amplia gama de experiencias únicas.",
       "imagen_persona": "./imagenes/director2.jpg",
       "imagen_premio": "./imagenes/premio3.jpg"
     },
     {
       "nombre": "Sophie Martin",
       "asociacion": "Sommeliers de Europa",
-      "cargo_directivo": "Secretaria General",
+      "cargo_directivo": "Secretaria General Ejecutiva",
       "nombre_premio": "Premio al Conocimiento Vitivinícola",
       "valoracion": "Saraza Wine Club es el lugar ideal para expandir tus conocimientos sobre vinos y disfrutar de eventos exclusivos para sus socios.",
       "imagen_persona": "./imagenes/directora2.jpg",
@@ -65,7 +65,7 @@
     {
       "nombre": "Miguel Hernández",
       "asociacion": "Sommeliers de España",
-      "cargo_directivo": "Presidente Honorario",
+      "cargo_directivo": "Presidente Ejecutivo Honorario",
       "nombre_premio": "Copa del Maestro Sommelier",
       "valoracion": "Saraza Wine Club es el lugar perfecto para aprender, disfrutar y conectar con amantes del vino de todo el mundo en sus eventos.",
       "imagen_persona": "./imagenes/director4.jpg",
@@ -74,7 +74,7 @@
     {
       "nombre": "Elena Petrova",
       "asociacion": "Asociación Rusa de Enología",
-      "cargo_directivo": "Directora Ejecutiva",
+      "cargo_directivo": "Directora Ejecutiva Rama Enologica",
       "nombre_premio": "Gran Medalla del Vino Ruso",
       "valoracion": "Saraza Wine Club es un lugar donde el arte de la degustación de vinos se combina con la pasión, camaraderia y la amistad.",
       "imagen_persona": "./imagenes/directora5.jpg",
@@ -83,7 +83,7 @@
     {
       "nombre": "Ricardo Silva",
       "asociacion": "Sommeliers de México",
-      "cargo_directivo": "Director de Eventos",
+      "cargo_directivo": "Director de Eventos Sociales",
       "nombre_premio": "Premio del Catador de México",
       "valoracion": "Saraza Wine Club ofrece una experiencia de cata excepcional y una comunidad apasionada de amantes del mejor vino del mundo.",
       "imagen_persona": "./imagenes/director5.jpg",
@@ -92,7 +92,7 @@
     {
       "nombre": "Hans Weber",
       "asociacion": "Vinos Internacionales",
-      "cargo_directivo": "Miembro de la Junta Directiva",
+      "cargo_directivo": "Miembro de la Junta Directiva Enologica",
       "nombre_premio": "Copa Internacional del Vino",
       "valoracion": "Saraza Wine Club es el refugio de los amantes del vino, donde se exploran vinos excepcionales de todo el mundo.",
       "imagen_persona": "./imagenes/director1.jpg",
@@ -101,7 +101,7 @@
     {
       "nombre": "Sophia O'Connor",
       "asociacion": "Sommeliers de Irlanda",
-      "cargo_directivo": "Directora de Comunicaciones",
+      "cargo_directivo": "Directora de Comunicaciones Institucionales",
       "nombre_premio": "Premio al Mérito de la Sommellerie",
       "valoracion": "Saraza Wine Club es una experiencia única para los amantes del vino, con catas excepcionales y eventos emocionantes.",
       "imagen_persona": "./imagenes/directora1.jpg",
@@ -110,16 +110,16 @@
     {
       "nombre": "Lorenzo Giordano",
       "asociacion": "Sommeliers de Italia",
-      "cargo_directivo": "Director de Educación",
+      "cargo_directivo": "Director de Educación Enologica",
       "nombre_premio": "Copa del Sommelier Italiano",
-      "valoracion": "Saraza Wine Club es el lugar donde el conocimiento y la pasión por el vino se unen en una comunidad excepcional.",
+      "valoracion": "Saraza Wine Club es el lugar donde el conocimiento y la pasión por el vino se unen en una comunidad enologica excepcional.",
       "imagen_persona": "./imagenes/director2.jpg",
       "imagen_premio": "./imagenes/premio3.jpg"
     },
     {
       "nombre": "Olga Petrovna",
       "asociacion": "Sommeliers de Rusia",
-      "cargo_directivo": "Presidenta de Honor",
+      "cargo_directivo": "Presidenta Ejecutiva de Honor",
       "nombre_premio": "Gran Premio de la Sommellerie Rusa",
       "valoracion": "Saraza Wine Club ofrece una experiencia inigualable de degustación de vinos y eventos exclusivos para socios.",
       "imagen_persona": "./imagenes/directora2.jpg",
@@ -128,7 +128,7 @@
     {
       "nombre": "Robert Smithson",
       "asociacion": "Consejo de Vinos de California",
-      "cargo_directivo": "Director de Relaciones Públicas",
+      "cargo_directivo": "Director de RRPPs",
       "nombre_premio": "Premio del Viticultor Californiano",
       "valoracion": "Saraza Wine Club es un lugar donde se celebra la diversidad de vinos y se fomenta la gran pasión vinícola.",
       "imagen_persona": "./imagenes/director3.jpg",
@@ -136,8 +136,8 @@
     },
     {
       "nombre": "Helena Larsen",
-      "asociacion": "Sommeliers de Noruega",
-      "cargo_directivo": "Directora de Desarrollo",
+      "asociacion": "Sommeliers Asociados de Noruega",
+      "cargo_directivo": "Directora de Desarrollo Vitivinicola",
       "nombre_premio": "Copa del Sommelier Noruego",
       "valoracion": "Saraza Wine Club es el lugar donde se explora el mundo del vino con una comunidad muy pero muy apasionada.",
       "imagen_persona": "./imagenes/directora3.jpg",
@@ -145,8 +145,8 @@
     },
     {
       "nombre": "Nicoleta Stoica",
-      "asociacion": "Sommeliers de Rumania",
-      "cargo_directivo": "Vocal de Eventos",
+      "asociacion": "Sommeliers Asociados de Rumania",
+      "cargo_directivo": "Vicepresidente Vocal de Eventos",
       "nombre_premio": "Premio al Sommelier Rumano",
       "valoracion": "Saraza Wine Club ofrece una experiencia de cata excepcional y eventos únicos para los amantes del vino.",
       "imagen_persona": "./imagenes/directora4.jpg",

@@ -5,9 +5,10 @@
 
 .isotipo {
     align-self: flex-start;
-    width: 400px;
-    height: 125px;
-
+/*    width: 400px;
+    height: 125px;*/
+    max-width: 100%;
+    height: auto;
     /*   display: inline-block; */
     /*toma en cuenta la altura de las etiquetas, como una mezcla de inline y block */
 }
@@ -114,9 +115,8 @@ body {
     /*grid-template-columns: repeat(autofill,minmax(25rem,1fr));  */
     /*width: min(95%, 70rem);*/
     /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(4, 1fr);
     margin-inline: auto;
-
 }
 
 .contenedor#index {
@@ -271,13 +271,17 @@ body {
 
 .tarjeta-producto {
 
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+margin: 10px;
 
+padding: 10px;
+
+width: 100%;
+
+display: flex;
+
+align-items: center;
+
+box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -599,6 +603,11 @@ body {
         display: none; /* Evita que ocupen espacio */
       }
 
+      .sidebar-2 {
+        visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
+        display: none; /* Evita que ocupen espacio */
+      }
+
     .contenedor#index {
         grid-template-areas:
             "header header header header"
@@ -680,7 +689,10 @@ body {
         visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
         display: none; /* Evita que ocupen espacio */
       }
-
+      .sidebar-2 {
+        visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
+        display: none; /* Evita que ocupen espacio */
+      }
 
 
     .contenedor#login-registro {
@@ -718,7 +730,10 @@ body {
         visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
         display: none; /* Evita que ocupen espacio */
       }
-
+      .sidebar-2 {
+        visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
+        display: none; /* Evita que ocupen espacio */
+      }
 
     .contenedor#index {
         grid-template-areas:
@@ -820,7 +835,10 @@ body {
         visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
         display: none; /* Evita que ocupen espacio */
       }
-
+      .sidebar-2 {
+        visibility: hidden; /* Oculta los elementos a partir del segundo en la segunda columna */
+        display: none; /* Evita que ocupen espacio */
+      }
 
 .contenedor#login-registro {
        
@@ -893,7 +911,6 @@ body {
     grid-area: header;
     text-align: center;
     align-items: center;
-
     background-size: 100% 300px;
     /* Ajusta el tamaño de la imagen al contenedor */
     background-position: center;
@@ -906,7 +923,6 @@ body {
     /* Alinea el texto al centro */
     padding: 20px;
     /* Espacio interno para el contenido */
-
 }
 
 .contenedor .contenido {
@@ -916,7 +932,7 @@ body {
     align-items: center;
     text-align: center;
     display: inline-flex;
-    min-width: 270px;
+    min-width: 200px;
 }
 
 .contenedor .contenido-2 {
@@ -1104,7 +1120,9 @@ nav a {
 
 .social {
     align-self: flex-start;
-    width: 300px;
+    max-width: 100%;
+    height: auto;
+    /*width: 300px;*/
  /*   height: 125px;*/
 
     /*   display: inline-block; */
