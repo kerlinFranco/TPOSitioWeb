@@ -13,7 +13,7 @@
       "asociacion": "Federación Francesa de Enología",
       "cargo_directivo": "Vicepresidente",
       "nombre_premio": "Gran Medalla del Vino Francés",
-      "valoracion": "Saraza Wine Club ofrece una selección de vinos que refleja la pasión por la enología.",
+      "valoracion": "Saraza Wine Club ofrece una selección de vinos que refleja la pasión por la enología y el disfrute de los eventos sociales.",
       "imagen_persona": "./imagenes/directora1.jpg",
       "imagen_premio": "./imagenes/premio2.jpg"
     },
@@ -31,7 +31,7 @@
       "asociacion": "Sommeliers de Europa",
       "cargo_directivo": "Secretaria General",
       "nombre_premio": "Premio al Conocimiento Vitivinícola",
-      "valoracion": "Saraza Wine Club es el lugar ideal para expandir tus conocimientos sobre vinos y disfrutar de eventos exclusivos.",
+      "valoracion": "Saraza Wine Club es el lugar ideal para expandir tus conocimientos sobre vinos y disfrutar de eventos exclusivos para sus socios.",
       "imagen_persona": "./imagenes/directora2.jpg",
       "imagen_premio": "./imagenes/premio4.jpg"
     },
@@ -40,7 +40,7 @@
       "asociacion": "Consejo Internacional de Enología",
       "cargo_directivo": "Vocal",
       "nombre_premio": "Copa del Enólogo Internacional",
-      "valoracion": "Saraza Wine Club brinda una experiencia única de degustación de vinos de todo el mundo y una comunidad apasionada.",
+      "valoracion": "Saraza Wine Club brinda una experiencia única de degustación de vinos exclusivos de todo el mundo y una comunidad apasionada.",
       "imagen_persona": "./imagenes/directora3.jpg",
       "imagen_premio": "./imagenes/premio5.jpg"
     },
@@ -49,7 +49,7 @@
       "asociacion": "Sociedad Vinícola de Francia",
       "cargo_directivo": "Vicepresidente Ejecutivo",
       "nombre_premio": "Gran Premio de la Viticultura",
-      "valoracion": "Saraza Wine Club es un refugio para los amantes del vino, con una variedad de vinos exquisitos y eventos emocionantes.",
+      "valoracion": "Saraza Wine Club es un refugio para los amantes del vino, con una variedad de vinos exquisitos y eventos sociales emocionantes.",
       "imagen_persona": "./imagenes/director3.jpg",
       "imagen_premio": "./imagenes/premio1.jpg"
     },
@@ -58,7 +58,7 @@
       "asociacion": "Asociación de Enólogos de Argentina",
       "cargo_directivo": "Directora de Marketing",
       "nombre_premio": "Mejor Sommelier del Año",
-      "valoracion": "Saraza Wine Club ofrece una experiencia inigualable para los amantes del vino y eventos de alta calidad.",
+      "valoracion": "Saraza Wine Club ofrece una experiencia inigualable para los amantes del vino y eventos para socios de alta calidad enologica.",
       "imagen_persona": "./imagenes/directora4.jpg",
       "imagen_premio": "./imagenes/premio2.jpg"
     },
@@ -67,7 +67,7 @@
       "asociacion": "Sommeliers de España",
       "cargo_directivo": "Presidente Honorario",
       "nombre_premio": "Copa del Maestro Sommelier",
-      "valoracion": "Saraza Wine Club es el lugar perfecto para aprender, disfrutar y conectar con amantes del vino de todo el mundo.",
+      "valoracion": "Saraza Wine Club es el lugar perfecto para aprender, disfrutar y conectar con amantes del vino de todo el mundo en sus eventos.",
       "imagen_persona": "./imagenes/director4.jpg",
       "imagen_premio": "./imagenes/premio3.jpg"
     },
@@ -76,7 +76,7 @@
       "asociacion": "Asociación Rusa de Enología",
       "cargo_directivo": "Directora Ejecutiva",
       "nombre_premio": "Gran Medalla del Vino Ruso",
-      "valoracion": "Saraza Wine Club es un lugar donde el arte de la degustación de vinos se combina con la pasión y la amistad.",
+      "valoracion": "Saraza Wine Club es un lugar donde el arte de la degustación de vinos se combina con la pasión, camaraderia y la amistad.",
       "imagen_persona": "./imagenes/directora5.jpg",
       "imagen_premio": "./imagenes/premio4.jpg"
     },
@@ -85,7 +85,7 @@
       "asociacion": "Sommeliers de México",
       "cargo_directivo": "Director de Eventos",
       "nombre_premio": "Premio del Catador de México",
-      "valoracion": "Saraza Wine Club ofrece una experiencia de cata excepcional y una comunidad apasionada de amantes del vino.",
+      "valoracion": "Saraza Wine Club ofrece una experiencia de cata excepcional y una comunidad apasionada de amantes del mejor vino del mundo.",
       "imagen_persona": "./imagenes/director5.jpg",
       "imagen_premio": "./imagenes/premio5.jpg"
     },
@@ -121,7 +121,7 @@
       "asociacion": "Sommeliers de Rusia",
       "cargo_directivo": "Presidenta de Honor",
       "nombre_premio": "Gran Premio de la Sommellerie Rusa",
-      "valoracion": "Saraza Wine Club ofrece una experiencia inigualable de degustación de vinos y eventos exclusivos.",
+      "valoracion": "Saraza Wine Club ofrece una experiencia inigualable de degustación de vinos y eventos exclusivos para socios.",
       "imagen_persona": "./imagenes/directora2.jpg",
       "imagen_premio": "./imagenes/premio4.jpg"
     },
@@ -130,7 +130,7 @@
       "asociacion": "Consejo de Vinos de California",
       "cargo_directivo": "Director de Relaciones Públicas",
       "nombre_premio": "Premio del Viticultor Californiano",
-      "valoracion": "Saraza Wine Club es un lugar donde se celebra la diversidad de vinos y se fomenta la pasión vinícola.",
+      "valoracion": "Saraza Wine Club es un lugar donde se celebra la diversidad de vinos y se fomenta la gran pasión vinícola.",
       "imagen_persona": "./imagenes/director3.jpg",
       "imagen_premio": "./imagenes/premio5.jpg"
     },
@@ -139,7 +139,7 @@
       "asociacion": "Sommeliers de Noruega",
       "cargo_directivo": "Directora de Desarrollo",
       "nombre_premio": "Copa del Sommelier Noruego",
-      "valoracion": "Saraza Wine Club es el lugar donde se explora el mundo del vino con una comunidad apasionada.",
+      "valoracion": "Saraza Wine Club es el lugar donde se explora el mundo del vino con una comunidad muy pero muy apasionada.",
       "imagen_persona": "./imagenes/directora3.jpg",
       "imagen_premio": "./imagenes/premio1.jpg"
     },
