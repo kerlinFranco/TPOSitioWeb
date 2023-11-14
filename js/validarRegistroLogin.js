@@ -15,22 +15,23 @@ let formRegistro=document.getElementById("formularioRegistro")
 //expresiones regulares
 let expRegEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let expRegtext=/[A-Za-z]/;
+// se cambio el mensaje debajo del form para no tener que modificar el css
 formLogin.addEventListener("submit",e=>{
     e.preventDefault()
     let msj="";
     let entrar=false;
     mensajeL.innerHTML=""
     if(emailLogin.value.length==0){
-        msj+=`Ingrese un email<br>`
+        alert("Ingrese un email")
         entrar=true;
         
     }else if(!expRegEmail.test(emailLogin.value)){
-        msj+=`El email no es valido <br>`
+        alert("El email no es valido")
         entrar=true;
         
     }
     if(passLogin.value.length==0){
-      msj+=`Ingrese una contraseña<br>`
+      alert("Ingrese una contraseña")
       entrar=true;
     }
     if(entrar){
@@ -45,20 +46,21 @@ formRegistro.addEventListener("submit", e=>{
     let entrar=false;
     mensajeR.innerHTML=""
     if(!expRegtext.test(nombre.value)){
-      msj+=`El nombre no es valido<br>`
+      alert("El nombre no es valido")
     }
     if(emailRegistro.value.length==0){
-        msj+=`Ingrese un email<br>`
+        alert("Ingrese un email")
+        
     }else if(!expRegEmail.test(emailRegistro.value)){
-        msj+=`El email no es valido <br>`
+        alert("El email no es valido")
         entrar=true;
     }
     if(passRegistro.value.length==0){
-      msj+=`Ingrese una contraseña<br>`
+      alert("Ingrese una contraseña")
       entrar=true;
     }
     if(passRegistro2.value!= passRegistro.value){
-      msj+=`Las contraseñas son diferentes<br>`
+      alert("Las contraseñas no son iguales")
       entrar=true;
     }
     if(entrar){
