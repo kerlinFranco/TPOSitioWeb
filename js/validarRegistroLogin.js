@@ -18,33 +18,33 @@ let expRegtext=/[A-Za-z]/;
 // se cambio el mensaje debajo del form para no tener que modificar el css
 formLogin.addEventListener("submit",e=>{
     e.preventDefault()
-    let msj="";
-    let entrar=false;
-    mensajeL.innerHTML=""
+    // let msj="";
+    // let entrar=false;
+    // mensajeL.innerHTML=""
     if(emailLogin.value.length==0){
         alert("Ingrese un email")
-        entrar=true;
+        // entrar=true;
         
     }else if(!expRegEmail.test(emailLogin.value)){
         alert("El email no es valido")
-        entrar=true;
+        // entrar=true;
         
     }
     if(passLogin.value.length==0){
       alert("Ingrese una contraseña")
-      entrar=true;
+      // entrar=true;
     }
-    if(entrar){
-        mensajeL.innerHTML=msj
-    }
+    // if(entrar){
+    //     mensajeL.innerHTML=msj
+    // }
     //al actualizar la pagina se pierden los cambios al menaje p
 })
 
 formRegistro.addEventListener("submit", e=>{
   e.preventDefault()
-  let msj="";
-    let entrar=false;
-    mensajeR.innerHTML=""
+  // let msj="";
+    // let entrar=false;
+    // mensajeR.innerHTML=""
     if(!expRegtext.test(nombre.value)){
       alert("El nombre no es valido")
     }
@@ -53,19 +53,19 @@ formRegistro.addEventListener("submit", e=>{
         
     }else if(!expRegEmail.test(emailRegistro.value)){
         alert("El email no es valido")
-        entrar=true;
+        //entrar=true;
     }
     if(passRegistro.value.length==0){
       alert("Ingrese una contraseña")
-      entrar=true;
+      //entrar=true;
     }
     if(passRegistro2.value!= passRegistro.value){
       alert("Las contraseñas no son iguales")
-      entrar=true;
+      //entrar=true;
     }
-    if(entrar){
+    //if(entrar){
         // alert(msj)
-        mensajeR.innerHTML=msj
-    }
+       // mensajeR.innerHTML=msj
+    //}
 })
 
